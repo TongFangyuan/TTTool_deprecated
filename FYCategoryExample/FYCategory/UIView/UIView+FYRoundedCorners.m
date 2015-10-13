@@ -15,4 +15,11 @@
     [lay setMasksToBounds:YES];
     [lay setCornerRadius:radius];
 }
+
+- (void)fy_makeCircular{
+    CGFloat selfWith = self.bounds.size.width;
+    CGFloat radius = selfWith*0.5;
+    [self fy_setCornerRadius:radius];
+}
+
 @end

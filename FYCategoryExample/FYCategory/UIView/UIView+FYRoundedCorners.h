@@ -10,5 +10,14 @@
 
 @interface UIView (FYRoundedCorners)
 
+/**
+ *  设置圆角半径
+ */
 - (void)fy_setCornerRadius:(CGFloat)radius;
+
+/**
+ *  设置图层为圆形
+ */
+- (void)fy_makeCircular;
+
 @end
