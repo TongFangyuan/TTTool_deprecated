@@ -10,3 +10,4 @@
 #import "NSDateFormatter+FYCategory.h"
 #import "NSAttributedString+FYCategory.h"
 #import "UIView+FYRoundedCorners.h"
+#import "UIView+FYTag.h"
