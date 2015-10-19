@@ -16,6 +16,16 @@
 - (void)fy_setCornerRadius:(CGFloat)radius;
 
 /**
+ *  边框
+ */
+- (void)fy_showBorder:(BOOL)border;
+
+/**
+ *  设置圆角半径和边框
+ */
+- (void)fy_setCornerRadius:(CGFloat)radius showBorder:(BOOL)border;
+
+/**
  *  设置图层为圆形
  */
 - (void)fy_makeCircular;

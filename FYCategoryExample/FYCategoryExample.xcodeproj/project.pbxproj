@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		817721921BD4D4BB00F71613 /* UIView+FYTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 817721911BD4D4BB00F71613 /* UIView+FYTag.m */; };
 		81B079D31BCCAF9700FDA2EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079D21BCCAF9700FDA2EC /* main.m */; };
 		81B079D61BCCAF9700FDA2EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079D51BCCAF9700FDA2EC /* AppDelegate.m */; };
 		81B079D91BCCAF9700FDA2EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079D81BCCAF9700FDA2EC /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		817721901BD4D4BB00F71613 /* UIView+FYTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FYTag.h"; sourceTree = "<group>"; };
+		817721911BD4D4BB00F71613 /* UIView+FYTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FYTag.m"; sourceTree = "<group>"; };
 		81B079CD1BCCAF9700FDA2EC /* FYCategoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYCategoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B079D11BCCAF9700FDA2EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81B079D21BCCAF9700FDA2EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 			children = (
 				81B07A011BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.h */,
 				81B07A021BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m */,
+				817721901BD4D4BB00F71613 /* UIView+FYTag.h */,
+				817721911BD4D4BB00F71613 /* UIView+FYTag.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817721921BD4D4BB00F71613 /* UIView+FYTag.m in Sources */,
 				81B07A041BCCAFEF00FDA2EC /* NSDate+FYCategory.m in Sources */,
 				81B07A061BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m in Sources */,
 				81B079D91BCCAF9700FDA2EC /* ViewController.m in Sources */,
