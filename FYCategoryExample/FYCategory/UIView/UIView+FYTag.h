@@ -11,4 +11,7 @@
 @interface UIView (FYTag)
 
 - (void)fy_removeSubviewWithTag:(NSInteger)tag;
+
+- (BOOL)fy_isSubviewExistWithTag:(NSInteger)tag;
+
 @end

@@ -165,8 +165,7 @@ typedef struct DATEPARTS_t {
 - (NSInteger)fy_daysAfterDate: (NSDate *) aDate
 {
     NSTimeInterval ti = [self timeIntervalSinceDate:aDate];
-    [self fy_compareDay];
-    DLog(@"days%zd天\n\n\n", (NSInteger) (ti / D_DAY));
+//    [self fy_compareDay];
     return (NSInteger) (ti / D_DAY);
 }
 

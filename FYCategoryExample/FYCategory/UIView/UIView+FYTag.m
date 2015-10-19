@@ -16,4 +16,9 @@
     if (!subview) return;
     [subview removeFromSuperview];
 }
+
+- (BOOL)fy_isSubviewExistWithTag:(NSInteger)tag{
+    UIView *subview = [self viewWithTag:tag];
+    return subview ? YES : NO;
+}
 @end
