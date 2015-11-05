@@ -11,3 +11,5 @@
 #import "NSAttributedString+FYCategory.h"
 #import "UIView+FYRoundedCorners.h"
 #import "UIView+FYTag.h"
+#import "NSObject+FYStringValue.h"
+#import "NSArray+FYRemove.h"

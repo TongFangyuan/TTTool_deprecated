@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DEA64F1BEB521200DDB10B /* NSArray+FYRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DEA64E1BEB521200DDB10B /* NSArray+FYRemove.m */; };
+		18DEA6531BEB52AD00DDB10B /* NSObject+FYStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DEA6521BEB52AD00DDB10B /* NSObject+FYStringValue.m */; };
 		817721921BD4D4BB00F71613 /* UIView+FYTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 817721911BD4D4BB00F71613 /* UIView+FYTag.m */; };
 		81B079D31BCCAF9700FDA2EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079D21BCCAF9700FDA2EC /* main.m */; };
 		81B079D61BCCAF9700FDA2EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079D51BCCAF9700FDA2EC /* AppDelegate.m */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18DEA64D1BEB521200DDB10B /* NSArray+FYRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FYRemove.h"; sourceTree = "<group>"; };
+		18DEA64E1BEB521200DDB10B /* NSArray+FYRemove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FYRemove.m"; sourceTree = "<group>"; };
+		18DEA6511BEB52AD00DDB10B /* NSObject+FYStringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FYStringValue.h"; sourceTree = "<group>"; };
+		18DEA6521BEB52AD00DDB10B /* NSObject+FYStringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FYStringValue.m"; sourceTree = "<group>"; };
 		817721901BD4D4BB00F71613 /* UIView+FYTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FYTag.h"; sourceTree = "<group>"; };
 		817721911BD4D4BB00F71613 /* UIView+FYTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FYTag.m"; sourceTree = "<group>"; };
 		81B079CD1BCCAF9700FDA2EC /* FYCategoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYCategoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DEA64C1BEB521200DDB10B /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				18DEA64D1BEB521200DDB10B /* NSArray+FYRemove.h */,
+				18DEA64E1BEB521200DDB10B /* NSArray+FYRemove.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		18DEA6501BEB52AD00DDB10B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				18DEA6511BEB52AD00DDB10B /* NSObject+FYStringValue.h */,
+				18DEA6521BEB52AD00DDB10B /* NSObject+FYStringValue.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		81B079C41BCCAF9700FDA2EC = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				81B079F71BCCAFEF00FDA2EC /* FYCategory.h */,
+				18DEA6501BEB52AD00DDB10B /* NSObject */,
+				18DEA64C1BEB521200DDB10B /* NSArray */,
 				81B079F81BCCAFEF00FDA2EC /* NSAttributedString */,
 				81B079FB1BCCAFEF00FDA2EC /* NSDate */,
 				81B07A001BCCAFEF00FDA2EC /* UIView */,
@@ -280,8 +306,10 @@
 			files = (
 				817721921BD4D4BB00F71613 /* UIView+FYTag.m in Sources */,
 				81B07A041BCCAFEF00FDA2EC /* NSDate+FYCategory.m in Sources */,
+				18DEA64F1BEB521200DDB10B /* NSArray+FYRemove.m in Sources */,
 				81B07A061BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m in Sources */,
 				81B079D91BCCAF9700FDA2EC /* ViewController.m in Sources */,
+				18DEA6531BEB52AD00DDB10B /* NSObject+FYStringValue.m in Sources */,
 				81B079D61BCCAF9700FDA2EC /* AppDelegate.m in Sources */,
 				81B07A031BCCAFEF00FDA2EC /* NSAttributedString+FYCategory.m in Sources */,
 				81B07A051BCCAFEF00FDA2EC /* NSDateFormatter+FYCategory.m in Sources */,
