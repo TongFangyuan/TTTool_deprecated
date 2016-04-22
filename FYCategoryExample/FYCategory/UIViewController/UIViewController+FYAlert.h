@@ -16,7 +16,7 @@
  *  @param title   标题
  *  @param message 提示信息
  */
-- (void)fy_alertWithTitle:(NSString *)title message:(NSString *)message;
+- (void)fy_showTitle:(NSString *)title message:(NSString *)message;
 
 /**
  *  弹窗提示,有回调
@@ -25,7 +25,7 @@
  *  @param message 提示信息
  *  @param handler 确认按钮回调
  */
-- (void)fy_alertWithTitle:(NSString *)title message:(NSString *)message confirmHandler:(void(^)(void))confirmHandler;
+- (void)fy_showTitle:(NSString *)title message:(NSString *)message confirmHandler:(void(^)(void))confirmHandler;
 /**
  *  弹窗提示,有点击确定和取消的回调
  *
@@ -34,6 +34,6 @@
  *  @param confirmHandler 确认按钮回调
  *  @param cancelHandler  删除按钮回调
  */
-- (void)fy_alertWithTitle:(NSString *)title message:(NSString *)message confirmHandler:(void(^)(void))confirmHandler cancelHandler:(void(^)(void))cancelHandler;
+- (void)fy_showTitle:(NSString *)title message:(NSString *)message confirmHandler:(void(^)(void))confirmHandler cancelHandler:(void(^)(void))cancelHandler;
 
 @end

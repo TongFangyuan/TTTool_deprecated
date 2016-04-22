@@ -31,7 +31,7 @@
 
 - (IBAction)alertAction:(id)sender {
     
-    [self fy_alertWithTitle:@"提示" message:@"提示内容" confirmHandler:^{
+    [self fy_showTitle:@"提示" message:@"提示内容" confirmHandler:^{
         NSLog(@"确定");
     } cancelHandler:^{
         NSLog(@"取消");

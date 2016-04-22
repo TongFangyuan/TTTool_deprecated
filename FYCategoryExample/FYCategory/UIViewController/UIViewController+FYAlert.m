@@ -10,24 +10,24 @@
 
 @implementation UIViewController (FYAlert)
 
-- (void)fy_alertWithTitle:(NSString *)title message:(NSString *)message
+- (void)fy_showTitle:(NSString *)title message:(NSString *)message
 {
     [self fy_alertActionWithTitle:title message:message style:UIAlertActionStyleDefault handler:nil];
 }
 
-- (void)fy_alertWithTitle:(NSString *)title message:(NSString *)message confirmHandler:(void(^)(void))confirmHandler{
+- (void)fy_showTitle:(NSString *)title message:(NSString *)message confirmHandler:(void(^)(void))confirmHandler{
     
     UIAlertAction *confirmAlertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         confirmHandler();
     }];
     
-    [self fy_alertWithTitle:title
+    [self fy_showTitle:title
                      message:message
            cancelAlertAction:nil
           confirmAlertAction:confirmAlertAction];
 }
 
-- (void)fy_alertWithTitle:(NSString *)title
+- (void)fy_showTitle:(NSString *)title
                    message:(NSString *)message
             confirmHandler:(void(^)(void))confirmHandler
              cancelHandler:(void(^)(void))cancelHandler{
@@ -39,7 +39,7 @@
         cancelHandler();
     }];
     
-    [self fy_alertWithTitle:title
+    [self fy_showTitle:title
                      message:message
            cancelAlertAction:cancelAlertAction
           confirmAlertAction:confirmAlertAction];
@@ -52,7 +52,7 @@
 {
     
     UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:style handler:handler];
-    [self fy_alertWithTitle:title
+    [self fy_showTitle:title
                      message:message
            cancelAlertAction:nil
           confirmAlertAction:confirmAction];
@@ -60,10 +60,10 @@
 }
 
 
-- (void)fy_alertWithTitle:(NSString *)title
+- (void)fy_showTitle:(NSString *)title
                    message:(NSString *)message
         confirmAlertAction:(UIAlertAction *)confirmAlertAction{
-    [self fy_alertWithTitle:title
+    [self fy_showTitle:title
                      message:message
            cancelAlertAction:nil
           confirmAlertAction:confirmAlertAction];
@@ -78,7 +78,7 @@
  *  @param cancelAlertAction  取消事件
  *  @param confirmAlertAction 确定事件
  */
-- (void)fy_alertWithTitle:(NSString *)title
+- (void)fy_showTitle:(NSString *)title
                    message:(NSString *)message
          cancelAlertAction:(UIAlertAction *)cancelAlertAction
         confirmAlertAction:(UIAlertAction *)confirmAlertAction{
