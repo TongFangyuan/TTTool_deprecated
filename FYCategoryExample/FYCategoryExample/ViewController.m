@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FYCategory.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+}
+
+- (IBAction)alertAction:(id)sender {
+    
+    [self fy_alertWithTitle:@"提示" message:@"提示内容" confirmHandler:^{
+        NSLog(@"确定");
+    } cancelHandler:^{
+        NSLog(@"取消");
+    }];
 }
 
 @end
