@@ -21,6 +21,7 @@
 		81B07A041BCCAFEF00FDA2EC /* NSDate+FYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079FD1BCCAFEF00FDA2EC /* NSDate+FYCategory.m */; };
 		81B07A051BCCAFEF00FDA2EC /* NSDateFormatter+FYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B079FF1BCCAFEF00FDA2EC /* NSDateFormatter+FYCategory.m */; };
 		81B07A061BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B07A021BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m */; };
+		DA202EB81CC9CBD9000D9DA8 /* UIViewController+FYAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA202EB71CC9CBD9000D9DA8 /* UIViewController+FYAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		81B079FF1BCCAFEF00FDA2EC /* NSDateFormatter+FYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+FYCategory.m"; sourceTree = "<group>"; };
 		81B07A011BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FYRoundedCorners.h"; sourceTree = "<group>"; };
 		81B07A021BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FYRoundedCorners.m"; sourceTree = "<group>"; };
+		DA202EB61CC9CBD9000D9DA8 /* UIViewController+FYAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FYAlert.h"; sourceTree = "<group>"; };
+		DA202EB71CC9CBD9000D9DA8 /* UIViewController+FYAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FYAlert.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				81B079F71BCCAFEF00FDA2EC /* FYCategory.h */,
+				DA202EB51CC9CBC7000D9DA8 /* UIViewController */,
 				18DEA6501BEB52AD00DDB10B /* NSObject */,
 				18DEA64C1BEB521200DDB10B /* NSArray */,
 				81B079F81BCCAFEF00FDA2EC /* NSAttributedString */,
@@ -202,6 +206,15 @@
 				817721911BD4D4BB00F71613 /* UIView+FYTag.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		DA202EB51CC9CBC7000D9DA8 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA202EB61CC9CBD9000D9DA8 /* UIViewController+FYAlert.h */,
+				DA202EB71CC9CBD9000D9DA8 /* UIViewController+FYAlert.m */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +321,7 @@
 				81B07A041BCCAFEF00FDA2EC /* NSDate+FYCategory.m in Sources */,
 				18DEA64F1BEB521200DDB10B /* NSArray+FYRemove.m in Sources */,
 				81B07A061BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m in Sources */,
+				DA202EB81CC9CBD9000D9DA8 /* UIViewController+FYAlert.m in Sources */,
 				81B079D91BCCAF9700FDA2EC /* ViewController.m in Sources */,
 				18DEA6531BEB52AD00DDB10B /* NSObject+FYStringValue.m in Sources */,
 				81B079D61BCCAF9700FDA2EC /* AppDelegate.m in Sources */,
