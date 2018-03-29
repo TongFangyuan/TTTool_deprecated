@@ -17,5 +17,6 @@
 #import "NSObject+FYStringValue.h"
 #import "NSArray+FYRemove.h"
 #import "UIViewController+FYAlert.h"
+#import "CommonHelper.h"
 
 #endif
