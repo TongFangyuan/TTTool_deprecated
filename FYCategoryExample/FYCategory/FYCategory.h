@@ -17,6 +17,6 @@
 #import "NSObject+FYStringValue.h"
 #import "NSArray+FYRemove.h"
 #import "UIViewController+FYAlert.h"
-#import "CommonHelper.h"
+#import "FYTimeWatch.h"
 
 #endif
