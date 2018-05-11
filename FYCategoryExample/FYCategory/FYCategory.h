@@ -18,5 +18,6 @@
 #import "NSArray+FYRemove.h"
 #import "UIViewController+FYAlert.h"
 #import "FYTimeWatch.h"
+#import "YYFPSLabel.h"
 
 #endif

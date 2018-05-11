@@ -25,6 +25,8 @@
 		841951B9206CC3210023C39A /* UIView+FYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841951B8206CC3210023C39A /* UIView+FYController.m */; };
 		84404397202B097900BACEB6 /* GSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 84404396202B097900BACEB6 /* GSKeyChain.m */; };
 		8440439A202B099F00BACEB6 /* GSKeyChainDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84404398202B099F00BACEB6 /* GSKeyChainDataManager.m */; };
+		84A94B7C20A58BC900551237 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A94B7920A58BC900551237 /* YYFPSLabel.m */; };
+		84A94B7D20A58BC900551237 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A94B7B20A58BC900551237 /* YYWeakProxy.m */; };
 		DA202EB81CC9CBD9000D9DA8 /* UIViewController+FYAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA202EB71CC9CBD9000D9DA8 /* UIViewController+FYAlert.m */; };
 		DAF38FEE1D22704C006E4FD4 /* NSString+FYRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF38FED1D22704C006E4FD4 /* NSString+FYRegex.m */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,10 @@
 		84404396202B097900BACEB6 /* GSKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKeyChain.m; sourceTree = "<group>"; };
 		84404398202B099F00BACEB6 /* GSKeyChainDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKeyChainDataManager.m; sourceTree = "<group>"; };
 		84404399202B099F00BACEB6 /* GSKeyChainDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKeyChainDataManager.h; sourceTree = "<group>"; };
+		84A94B7820A58BC900551237 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		84A94B7920A58BC900551237 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		84A94B7A20A58BC900551237 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		84A94B7B20A58BC900551237 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		DA202EB61CC9CBD9000D9DA8 /* UIViewController+FYAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FYAlert.h"; sourceTree = "<group>"; };
 		DA202EB71CC9CBD9000D9DA8 /* UIViewController+FYAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FYAlert.m"; sourceTree = "<group>"; };
 		DAF38FEC1D22704C006E4FD4 /* NSString+FYRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FYRegex.h"; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				81B079F61BCCAFEF00FDA2EC /* FYCategory */,
+				84A94B7620A58BC900551237 /* Other */,
 				81B079CF1BCCAF9700FDA2EC /* FYCategoryExample */,
 				81B079E91BCCAF9700FDA2EC /* FYCategoryExampleTests */,
 				81B079CE1BCCAF9700FDA2EC /* Products */,
@@ -246,6 +253,26 @@
 				84404398202B099F00BACEB6 /* GSKeyChainDataManager.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		84A94B7620A58BC900551237 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				84A94B7720A58BC900551237 /* YYFPSLabel */,
+			);
+			name = Other;
+			path = FYCategory/Other;
+			sourceTree = "<group>";
+		};
+		84A94B7720A58BC900551237 /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				84A94B7820A58BC900551237 /* YYFPSLabel.h */,
+				84A94B7920A58BC900551237 /* YYFPSLabel.m */,
+				84A94B7A20A58BC900551237 /* YYWeakProxy.h */,
+				84A94B7B20A58BC900551237 /* YYWeakProxy.m */,
+			);
+			path = YYFPSLabel;
 			sourceTree = "<group>";
 		};
 		DA202EB51CC9CBC7000D9DA8 /* UIViewController */ = {
@@ -375,12 +402,14 @@
 				18DEA64F1BEB521200DDB10B /* NSArray+FYRemove.m in Sources */,
 				81B07A061BCCAFEF00FDA2EC /* UIView+FYRoundedCorners.m in Sources */,
 				DA202EB81CC9CBD9000D9DA8 /* UIViewController+FYAlert.m in Sources */,
+				84A94B7C20A58BC900551237 /* YYFPSLabel.m in Sources */,
 				841951B9206CC3210023C39A /* UIView+FYController.m in Sources */,
 				81B079D91BCCAF9700FDA2EC /* ViewController.m in Sources */,
 				DAF38FEE1D22704C006E4FD4 /* NSString+FYRegex.m in Sources */,
 				18DEA6531BEB52AD00DDB10B /* NSObject+FYStringValue.m in Sources */,
 				81B079D61BCCAF9700FDA2EC /* AppDelegate.m in Sources */,
 				81B07A031BCCAFEF00FDA2EC /* NSAttributedString+FYCategory.m in Sources */,
+				84A94B7D20A58BC900551237 /* YYWeakProxy.m in Sources */,
 				81B07A051BCCAFEF00FDA2EC /* NSDateFormatter+FYCategory.m in Sources */,
 				81B079D31BCCAF9700FDA2EC /* main.m in Sources */,
 				8440439A202B099F00BACEB6 /* GSKeyChainDataManager.m in Sources */,
