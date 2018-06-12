@@ -7,9 +7,40 @@
 //
 
 #import "UIViewController+FYAlert.h"
+#import <objc/runtime.h>
 
 @implementation UIViewController (FYAlert)
 
+
+#pragma mark - Properties
+- (void)setFyAlert:(UIAlertController *)fyAlert {
+    objc_setAssociatedObject(self, @selector(fyAlert), fyAlert, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIAlertController *)fyAlert {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+#pragma mark - HUD
+- (void)fy_showHUD:(NSString *)msg{
+    if (self.fyAlert) {
+        [self fy_hiddenHUD];
+    }
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:msg message:nil preferredStyle:UIAlertControllerStyleAlert];
+    self.fyAlert = alert;
+    [self presentViewController:self.fyAlert animated:YES completion:nil];
+}
+
+- (void)fy_hiddenHUD {
+    if (self.fyAlert) {
+        [self.fyAlert dismissViewControllerAnimated:NO completion:nil];
+        self.fyAlert = nil;
+    }
+}
+
+
+#pragma mark - Alert
 - (void)fy_showTitle:(NSString *)title
              message:(NSString *)message {
     [self fy_alertActionWithTitle:title message:message style:UIAlertActionStyleDefault handler:nil];
@@ -96,4 +127,3 @@
 }
 
 @end
-
