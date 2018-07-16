@@ -8,17 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^FYTextFieldResultBlock)(UITextField *textField);
+
 @interface UIViewController (FYAlert)
 
 @property (nonatomic,strong,readonly,nullable) UIAlertController *fyAlert;
 
-#pragma mark - hud
+#pragma mark - HUD
 
 /// shwHUD with msg
 - (void)fy_showHUD:(NSString *_Nonnull)msg;
 - (void)fy_hiddenHUD;
 
-#pragma mark - alert
+#pragma mark - Alert
 /**
  *  普通弹窗提示
  *
@@ -45,6 +47,10 @@
  */
 - (void)fy_showTitle:(NSString *_Nullable)title message:(NSString *_Nullable)message confirmHandler:(void(^_Nullable)(void))confirmHandler cancelHandler:(void(^_Nullable)(void))cancelHandler;
 
+#pragma mark - Input alert
+- (void)fy_showInput:(NSString *)title
+                desc:(NSString *)desc
+              handle:(FYTextFieldResultBlock)handle;
 
 @end
 

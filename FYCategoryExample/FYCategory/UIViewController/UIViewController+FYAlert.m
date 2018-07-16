@@ -79,6 +79,31 @@
 }
 
 
+#pragma mark - Input alert
+- (void)fy_showInput:(NSString *)title
+                desc:(NSString *)desc
+              handle:(FYTextFieldResultBlock)handle
+{
+    
+    UIAlertController* alert = [UIAlertController
+                                alertControllerWithTitle:title
+                                message:desc
+                                preferredStyle:UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:nil];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancelAction];
+    
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if (handle) {
+            handle(alert.textFields.lastObject);
+        }
+    }];
+    [alert addAction:confirmAction];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 #pragma mark - private
 
 - (void)fy_alertActionWithTitle:(NSString *)title

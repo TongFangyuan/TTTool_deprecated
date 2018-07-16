@@ -31,6 +31,10 @@
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    [self fy_showInput:@"文本" desc:@"请输入文本内容" handle:^(UITextField *textField) {
+        NSLog(@"%@",textField.text);
+    }];
     
 }
 

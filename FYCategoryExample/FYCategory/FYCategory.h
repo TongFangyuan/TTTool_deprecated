@@ -19,5 +19,6 @@
 #import "UIViewController+FYAlert.h"
 #import "FYTimeWatch.h"
 #import "YYFPSLabel.h"
+#import "NSString+FYLocalization.h"
 
 #endif
