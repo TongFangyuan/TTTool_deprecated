@@ -28,6 +28,8 @@
 		84670718210022AB00B7D288 /* TTErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84670710210022AB00B7D288 /* TTErrorView.m */; };
 		84670719210022AB00B7D288 /* UIImage+TTCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 84670713210022AB00B7D288 /* UIImage+TTCode.m */; };
 		8467071A210022AB00B7D288 /* UIViewController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 84670715210022AB00B7D288 /* UIViewController+TTAlert.m */; };
+		8467071E210030D100B7D288 /* CoreImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8467071D210030D100B7D288 /* CoreImage.storyboard */; };
+		846707232100333D00B7D288 /* CoreImageStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 846707222100333D00B7D288 /* CoreImageStudyVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,9 @@
 		84670714210022AB00B7D288 /* UIViewController+TTAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTAlert.h"; sourceTree = "<group>"; };
 		84670715210022AB00B7D288 /* UIViewController+TTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTAlert.m"; sourceTree = "<group>"; };
 		8467071B210022E400B7D288 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8467071D210030D100B7D288 /* CoreImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreImage.storyboard; sourceTree = "<group>"; };
+		846707212100333D00B7D288 /* CoreImageStudyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreImageStudyVC.h; sourceTree = "<group>"; };
+		846707222100333D00B7D288 /* CoreImageStudyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreImageStudyVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +116,15 @@
 		846706962100205D00B7D288 /* TTToolSamples */ = {
 			isa = PBXGroup;
 			children = (
-				846706BE2100208900B7D288 /* Vendor */,
+				846707202100331500B7D288 /* Study */,
+				8467071F2100330F00B7D288 /* Samples */,
 				846706972100205D00B7D288 /* AppDelegate.h */,
 				846706982100205D00B7D288 /* AppDelegate.m */,
 				846706E3210021B300B7D288 /* MainViewController.h */,
 				846706E4210021B300B7D288 /* MainViewController.m */,
 				8467071B210022E400B7D288 /* PrefixHeader.pch */,
-				8467069D2100205D00B7D288 /* Main.storyboard */,
+				846706BE2100208900B7D288 /* Vendor */,
+				8467071C2100309D00B7D288 /* Storyboards */,
 				846706A02100205E00B7D288 /* Assets.xcassets */,
 				846706A22100205E00B7D288 /* LaunchScreen.storyboard */,
 				846706A52100205E00B7D288 /* Info.plist */,
@@ -184,6 +191,31 @@
 			path = TTTool;
 			sourceTree = "<group>";
 		};
+		8467071C2100309D00B7D288 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8467069D2100205D00B7D288 /* Main.storyboard */,
+				8467071D210030D100B7D288 /* CoreImage.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8467071F2100330F00B7D288 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		846707202100331500B7D288 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				846707212100333D00B7D288 /* CoreImageStudyVC.h */,
+				846707222100333D00B7D288 /* CoreImageStudyVC.m */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +276,7 @@
 				846706A42100205E00B7D288 /* LaunchScreen.storyboard in Resources */,
 				846706A12100205E00B7D288 /* Assets.xcassets in Resources */,
 				8467069F2100205D00B7D288 /* Main.storyboard in Resources */,
+				8467071E210030D100B7D288 /* CoreImage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +294,7 @@
 				846707062100229D00B7D288 /* NSArray+MASAdditions.m in Sources */,
 				8467071A210022AB00B7D288 /* UIViewController+TTAlert.m in Sources */,
 				846706A72100205E00B7D288 /* main.m in Sources */,
+				846707232100333D00B7D288 /* CoreImageStudyVC.m in Sources */,
 				84670718210022AB00B7D288 /* TTErrorView.m in Sources */,
 				846706E5210021B300B7D288 /* MainViewController.m in Sources */,
 				84670717210022AB00B7D288 /* TTApp.m in Sources */,
