@@ -96,7 +96,7 @@ UITableViewDataSource
 
 - (void)setupFilter:(NSString *)name
 {
-    UIImage *image = [UIImage imageNamed:@"image_1"];
+    UIImage *image = [UIImage imageNamed:@"image"];
     CGFloat scale = image.scale;
     UIImageOrientation oritentation = image.imageOrientation;
     
@@ -152,7 +152,7 @@ UITableViewDataSource
 
 - (void)orignal
 {
-    UIImage *image = [UIImage imageNamed:@"image_1"];
+    UIImage *image = [UIImage imageNamed:@"image"];
     self.imageView.image = image;
 }
 
@@ -161,7 +161,7 @@ UITableViewDataSource
     
 //    NSArray *array = [CIFilter filterNamesInCategory:kCICategoryHalftoneEffect];
     
-    UIImage *image = [UIImage imageNamed:@"image_1"];
+    UIImage *image = [UIImage imageNamed:@"image"];
     CGFloat scale = image.scale;
     UIImageOrientation oritentation = image.imageOrientation;
     
@@ -183,7 +183,7 @@ UITableViewDataSource
 }
 - (void)sepiaTone
 {
-    UIImage *image = [UIImage imageNamed:@"image_1"];
+    UIImage *image = [UIImage imageNamed:@"image"];
 
 }
 
