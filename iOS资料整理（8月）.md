@@ -82,7 +82,7 @@ toc: true
 
 
 ## 其他
-- [设置启动图片](hhttps://www.jianshu.com/p/df4e92966dc0)
+- [设置启动图片](https://www.jianshu.com/p/df4e92966dc0)
 - [iPhone尺寸· iOS 开发笔记](https://www.kancloud.cn/melissashu/ios/562301)
 - [iOS组件之UISegmentedControl详解](http://www.beyondabel.com/blog/2014/01/10/uisegmentedcontrol/)
 - [一款超级简单的导航条管理工具。完全自定义导航条](https://github.com/chenliangloveyou/EasyNavigation)
