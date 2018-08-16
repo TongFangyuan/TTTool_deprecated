@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CUe-Eu-Iov">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AttributedString-->
+        <scene sceneID="sWv-hg-wvT">
+            <objects>
+                <viewController title="AttributedString" id="CUe-Eu-Iov" customClass="AttributedStringViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJU-I0-3Xr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="设置文字排版方向，0横排，1 竖排" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUz-bH-DtG">
+                                <rect key="frame" x="16" y="626" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bjX-k7-t88"/>
+                                    <constraint firstAttribute="width" constant="180" id="wK7-FO-FpE"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AttributedString 学习" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVy-ZM-KzW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="606"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XVy-ZM-KzW" firstAttribute="leading" secondItem="e6g-Xi-btM" secondAttribute="leading" id="3BL-ZE-kxC"/>
+                            <constraint firstItem="e6g-Xi-btM" firstAttribute="trailing" secondItem="XVy-ZM-KzW" secondAttribute="trailing" id="Ont-Ao-s4R"/>
+                            <constraint firstItem="XVy-ZM-KzW" firstAttribute="top" secondItem="e6g-Xi-btM" secondAttribute="top" id="YXa-C2-95O"/>
+                            <constraint firstItem="QUz-bH-DtG" firstAttribute="top" secondItem="XVy-ZM-KzW" secondAttribute="bottom" id="eNC-fI-XRQ"/>
+                            <constraint firstItem="QUz-bH-DtG" firstAttribute="leading" secondItem="e6g-Xi-btM" secondAttribute="leading" constant="16" id="swV-za-7FI"/>
+                            <constraint firstItem="e6g-Xi-btM" firstAttribute="bottom" secondItem="QUz-bH-DtG" secondAttribute="bottom" constant="11" id="vdZ-0v-PBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6g-Xi-btM"/>
+                    </view>
+                    <connections>
+                        <outlet property="VerticalGlyphFormTF" destination="QUz-bH-DtG" id="YCo-dm-92G"/>
+                        <outlet property="label" destination="XVy-ZM-KzW" id="hts-0W-D5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8P-Ho-gkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520.79999999999995" y="-187.55622188905548"/>
+        </scene>
+    </scenes>
+</document>

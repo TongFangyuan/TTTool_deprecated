@@ -106,22 +106,26 @@ UITableViewDataSource
     if ([filter.inputKeys containsObject:kCIInputImageKey]) {
         [filter setValue:inputImage forKey:kCIInputImageKey];
     }
-    CIImage *outputImage = nil;
     
+
+    CIImage *outputImage = nil;
+
     if (filter && filter.outputImage) {
-        
+
         outputImage = filter.outputImage;
-        
+
         CIContext *context = [CIContext contextWithOptions:nil];
         CGImageRef imageRef = [context createCGImage:outputImage fromRect:outputImage.extent];
         UIImage *newImage = [UIImage imageWithCGImage:imageRef scale:scale orientation:oritentation];
         CGImageRelease(imageRef);
-        
+
         self.imageView.image = newImage;
         NSLog(@"%@",filter.inputKeys);
     } else {
-        NSLog(@"不是图像处理");
+        NSLog(@"参数错误，查看文档");
     }
+    NSLog(@"参数文档地址: %@",filter.attributes[@"CIAttributeReferenceDocumentation"]);
+
 }
 
 /*
