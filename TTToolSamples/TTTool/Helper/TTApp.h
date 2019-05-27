@@ -21,5 +21,10 @@
 + (NSString *)appBuildVersion;
 /// 获取App的名称
 + (NSString *)appName;
-
+/// 手机型号
++ (NSString *)getDeviceName;
+/// 获取系统内存（单位GB）
++ (float)getTotalMemorySize;
+/// 获取手机容量（单位GB）
++ (float)getTotalDiskSize;
 @end

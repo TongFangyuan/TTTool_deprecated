@@ -53,6 +53,9 @@
 		846707232100333D00B7D288 /* CoreImageStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 846707222100333D00B7D288 /* CoreImageStudyVC.m */; };
 		84888856211945DB00FBAC8F /* Code.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84888855211945DB00FBAC8F /* Code.storyboard */; };
 		848888592119466C00FBAC8F /* CodeGeneratViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848888582119466C00FBAC8F /* CodeGeneratViewController.m */; };
+		DA4560A3229C095200525AA3 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609D229C095100525AA3 /* NSDictionary+String.m */; };
+		DA4560A4229C095200525AA3 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */; };
+		DA4560A5229C095200525AA3 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4560A2229C095200525AA3 /* UIColor+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +152,14 @@
 		84888855211945DB00FBAC8F /* Code.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Code.storyboard; sourceTree = "<group>"; };
 		848888572119466C00FBAC8F /* CodeGeneratViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGeneratViewController.h; sourceTree = "<group>"; };
 		848888582119466C00FBAC8F /* CodeGeneratViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeGeneratViewController.m; sourceTree = "<group>"; };
+		DA45609D229C095100525AA3 /* NSDictionary+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+String.m"; sourceTree = "<group>"; };
+		DA45609E229C095100525AA3 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
+		DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYJXibConfiguration.m"; sourceTree = "<group>"; };
+		DA4560A0229C095100525AA3 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		DA4560A1229C095100525AA3 /* NSDictionary+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+String.h"; sourceTree = "<group>"; };
+		DA4560A2229C095200525AA3 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		DA4560A6229C096A00525AA3 /* ExtensionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionHeader.h; sourceTree = "<group>"; };
+		DA4560A8229C09E200525AA3 /* HelperHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,17 +375,9 @@
 		8467070A210022AB00B7D288 /* TTTool */ = {
 			isa = PBXGroup;
 			children = (
-				8467070B210022AB00B7D288 /* NSObject+TTKVO.h */,
-				8467070C210022AB00B7D288 /* NSObject+TTKVO.m */,
-				8467070D210022AB00B7D288 /* TTApp.h */,
-				8467070E210022AB00B7D288 /* TTApp.m */,
-				8467070F210022AB00B7D288 /* TTErrorView.h */,
-				84670710210022AB00B7D288 /* TTErrorView.m */,
 				84670711210022AB00B7D288 /* TTTool.h */,
-				84670712210022AB00B7D288 /* UIImage+TTCode.h */,
-				84670713210022AB00B7D288 /* UIImage+TTCode.m */,
-				84670714210022AB00B7D288 /* UIViewController+TTAlert.h */,
-				84670715210022AB00B7D288 /* UIViewController+TTAlert.m */,
+				DA4560A7229C09AC00525AA3 /* Helper */,
+				DA45609C229C093600525AA3 /* Extension */,
 			);
 			path = TTTool;
 			sourceTree = "<group>";
@@ -419,6 +422,38 @@
 				848888582119466C00FBAC8F /* CodeGeneratViewController.m */,
 			);
 			path = "条码生成";
+			sourceTree = "<group>";
+		};
+		DA45609C229C093600525AA3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA4560A6229C096A00525AA3 /* ExtensionHeader.h */,
+				8467070B210022AB00B7D288 /* NSObject+TTKVO.h */,
+				8467070C210022AB00B7D288 /* NSObject+TTKVO.m */,
+				84670712210022AB00B7D288 /* UIImage+TTCode.h */,
+				84670713210022AB00B7D288 /* UIImage+TTCode.m */,
+				84670714210022AB00B7D288 /* UIViewController+TTAlert.h */,
+				84670715210022AB00B7D288 /* UIViewController+TTAlert.m */,
+				DA4560A1229C095100525AA3 /* NSDictionary+String.h */,
+				DA45609D229C095100525AA3 /* NSDictionary+String.m */,
+				DA4560A0229C095100525AA3 /* UIColor+Addition.h */,
+				DA4560A2229C095200525AA3 /* UIColor+Addition.m */,
+				DA45609E229C095100525AA3 /* UIView+SYJXibConfiguration.h */,
+				DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DA4560A7229C09AC00525AA3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DA4560A8229C09E200525AA3 /* HelperHeader.h */,
+				8467070D210022AB00B7D288 /* TTApp.h */,
+				8467070E210022AB00B7D288 /* TTApp.m */,
+				8467070F210022AB00B7D288 /* TTErrorView.h */,
+				84670710210022AB00B7D288 /* TTErrorView.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,12 +533,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8461FAAA210EEC2D004C1D4E /* BezierPathVC.m in Sources */,
+				DA4560A3229C095200525AA3 /* NSDictionary+String.m in Sources */,
 				845AAF322105CEFA008DA154 /* IQPreviousNextView.m in Sources */,
 				845AAF052105CC75008DA154 /* AttributedStringViewController.m in Sources */,
 				845AAF2A2105CEFA008DA154 /* IQUIScrollView+Additions.m in Sources */,
+				DA4560A4229C095200525AA3 /* UIView+SYJXibConfiguration.m in Sources */,
 				846707072100229D00B7D288 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				846707052100229D00B7D288 /* MASViewConstraint.m in Sources */,
 				845AAF2C2105CEFA008DA154 /* IQUIView+Hierarchy.m in Sources */,
+				DA4560A5229C095200525AA3 /* UIColor+Addition.m in Sources */,
 				84670719210022AB00B7D288 /* UIImage+TTCode.m in Sources */,
 				845AAF292105CEFA008DA154 /* IQNSArray+Sort.m in Sources */,
 				845AAF2F2105CEFA008DA154 /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -674,7 +712,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 393LMJAQ8W;
+				DEVELOPMENT_TEAM = 4P78C7E8TY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TTToolSamples/PrefixHeader.pch;
 				INFOPLIST_FILE = TTToolSamples/Info.plist;
@@ -694,7 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 393LMJAQ8W;
+				DEVELOPMENT_TEAM = 4P78C7E8TY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TTToolSamples/PrefixHeader.pch;
 				INFOPLIST_FILE = TTToolSamples/Info.plist;
