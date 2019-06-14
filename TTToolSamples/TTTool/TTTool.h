@@ -16,5 +16,7 @@
 #import "ExtensionHeader.h"
 
 
+/****************************** Macro ******************************/
+#import "MacroHeader.h"
 
 #endif /* TTTool_h */

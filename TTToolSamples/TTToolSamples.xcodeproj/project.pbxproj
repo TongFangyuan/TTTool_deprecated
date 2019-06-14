@@ -152,6 +152,8 @@
 		84888855211945DB00FBAC8F /* Code.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Code.storyboard; sourceTree = "<group>"; };
 		848888572119466C00FBAC8F /* CodeGeneratViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGeneratViewController.h; sourceTree = "<group>"; };
 		848888582119466C00FBAC8F /* CodeGeneratViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeGeneratViewController.m; sourceTree = "<group>"; };
+		85C0803B22B33C150023DE39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		85C0803C22B33C2D0023DE39 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		DA45609D229C095100525AA3 /* NSDictionary+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+String.m"; sourceTree = "<group>"; };
 		DA45609E229C095100525AA3 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
 		DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYJXibConfiguration.m"; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				84670711210022AB00B7D288 /* TTTool.h */,
+				85C0803A22B33B9D0023DE39 /* Macro */,
 				DA4560A7229C09AC00525AA3 /* Helper */,
 				DA45609C229C093600525AA3 /* Extension */,
 			);
@@ -422,6 +425,15 @@
 				848888582119466C00FBAC8F /* CodeGeneratViewController.m */,
 			);
 			path = "条码生成";
+			sourceTree = "<group>";
+		};
+		85C0803A22B33B9D0023DE39 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				85C0803B22B33C150023DE39 /* README.md */,
+				85C0803C22B33C2D0023DE39 /* MacroHeader.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 		DA45609C229C093600525AA3 /* Extension */ = {
@@ -712,7 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4P78C7E8TY;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TTToolSamples/PrefixHeader.pch;
 				INFOPLIST_FILE = TTToolSamples/Info.plist;
@@ -732,7 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4P78C7E8TY;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TTToolSamples/PrefixHeader.pch;
 				INFOPLIST_FILE = TTToolSamples/Info.plist;
