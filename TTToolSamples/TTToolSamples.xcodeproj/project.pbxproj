@@ -378,7 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				84670711210022AB00B7D288 /* TTTool.h */,
-				85C0803A22B33B9D0023DE39 /* Macro */,
+				85C0803A22B33B9D0023DE39 /* Macro(宏定义) */,
 				DA4560A7229C09AC00525AA3 /* Helper */,
 				DA45609C229C093600525AA3 /* Extension */,
 			);
@@ -427,13 +427,13 @@
 			path = "条码生成";
 			sourceTree = "<group>";
 		};
-		85C0803A22B33B9D0023DE39 /* Macro */ = {
+		85C0803A22B33B9D0023DE39 /* Macro(宏定义) */ = {
 			isa = PBXGroup;
 			children = (
 				85C0803B22B33C150023DE39 /* README.md */,
 				85C0803C22B33C2D0023DE39 /* MacroHeader.h */,
 			);
-			path = Macro;
+			path = "Macro(宏定义)";
 			sourceTree = "<group>";
 		};
 		DA45609C229C093600525AA3 /* Extension */ = {
