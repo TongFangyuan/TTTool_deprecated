@@ -31,6 +31,9 @@
 #define TTLog(...)
 #endif
 
+/******************************   图片   ******************************/
+#define TTGetImage(s) [UIImage imageNamed:s]
+
 /****************************** iPhone X 系列 ******************************/
 #define iPhoneX                ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
                                ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
