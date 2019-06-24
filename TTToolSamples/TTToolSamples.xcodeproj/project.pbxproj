@@ -36,6 +36,7 @@
 		8586AFF122C0CF210077B664 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF022C0CF210077B664 /* SSKeychain.m */; };
 		8586AFF422C0CF970077B664 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF322C0CF970077B664 /* TTKeychainManager.m */; };
 		8586AFF722C0D6760077B664 /* UIColor+TTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF622C0D6760077B664 /* UIColor+TTHex.m */; };
+		8586AFFB22C0D9870077B664 /* UIAlertAction+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFFA22C0D9870077B664 /* UIAlertAction+TTAlert.m */; };
 		D919EC6A5C6EC2C46784AAC9 /* Pods_TTToolSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */; };
 		DA4560A3229C095200525AA3 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609D229C095100525AA3 /* NSDictionary+String.m */; };
 		DA4560A4229C095200525AA3 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */; };
@@ -104,6 +105,8 @@
 		8586AFF322C0CF970077B664 /* TTKeychainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKeychainManager.m; sourceTree = "<group>"; };
 		8586AFF522C0D6760077B664 /* UIColor+TTHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TTHex.h"; sourceTree = "<group>"; };
 		8586AFF622C0D6760077B664 /* UIColor+TTHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TTHex.m"; sourceTree = "<group>"; };
+		8586AFF922C0D9870077B664 /* UIAlertAction+TTAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+TTAlert.h"; sourceTree = "<group>"; };
+		8586AFFA22C0D9870077B664 /* UIAlertAction+TTAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+TTAlert.m"; sourceTree = "<group>"; };
 		85C0803B22B33C150023DE39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		85C0803C22B33C2D0023DE39 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		A6FEBCE2E5A6255242A4911A /* Pods-TTToolSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolSamples.debug.xcconfig"; path = "Target Support Files/Pods-TTToolSamples/Pods-TTToolSamples.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF8A22C073710077B664 /* TTUIKit.h */,
+				8586AFF822C0D96C0077B664 /* UIAlertAction */,
 				8586AF8E22C073B30077B664 /* UIViewController */,
 				8586AF8D22C073A30077B664 /* UIImage */,
 				8586AF8C22C0738B0077B664 /* UIColor */,
@@ -439,6 +443,15 @@
 				8586AFF022C0CF210077B664 /* SSKeychain.m */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		8586AFF822C0D96C0077B664 /* UIAlertAction */ = {
+			isa = PBXGroup;
+			children = (
+				8586AFF922C0D9870077B664 /* UIAlertAction+TTAlert.h */,
+				8586AFFA22C0D9870077B664 /* UIAlertAction+TTAlert.m */,
+			);
+			path = UIAlertAction;
 			sourceTree = "<group>";
 		};
 		85C0803A22B33B9D0023DE39 /* Macro(宏定义) */ = {
@@ -624,6 +637,7 @@
 				8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */,
 				846706992100205D00B7D288 /* AppDelegate.m in Sources */,
 				84670716210022AB00B7D288 /* NSObject+TTKVO.m in Sources */,
+				8586AFFB22C0D9870077B664 /* UIAlertAction+TTAlert.m in Sources */,
 				8586AF9922C07AFE0077B664 /* BYFoundationLog.m in Sources */,
 				845AAEFC2105C80D008DA154 /* UIView+Draw.m in Sources */,
 				8586AFF122C0CF210077B664 /* SSKeychain.m in Sources */,
