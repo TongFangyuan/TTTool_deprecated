@@ -34,6 +34,9 @@
 /******************************   图片   ******************************/
 #define TTGetImage(s) [UIImage imageNamed:s]
 
+/******************************   Xib   ******************************/
+#define kLoadXibViewWithNibName(n) [[[NSBundle mainBundle] loadNibNamed:n owner:nil options:nil] firstObject]
+
 /****************************** iPhone X 系列 ******************************/
 #define iPhoneX                ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
                                ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TTToolSamples/Pods-TTToolSamples-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

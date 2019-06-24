@@ -10,12 +10,15 @@
 #define TTTool_h
 
 /******************************Helpers******************************/
-#import "HelperHeader.h"
+#import "TTHelper.h"
 
-/******************************Extension******************************/
-#import "ExtensionHeader.h"
+/******************************Categories******************************/
+#import "TTCategoriesHeader.h"
 
 /****************************** Macro ******************************/
 #import "MacroHeader.h"
+
+/******************************   TTUITools   ******************************/
+#import "TTUITools.h"
 
 #endif /* TTTool_h */
