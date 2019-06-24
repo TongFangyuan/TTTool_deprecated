@@ -10,5 +10,6 @@
 #define TTHelper_h
 
 #import "TTApp.h"
+#import "TTPermissionManager.h"
 
 #endif /* TTHelper_h */

@@ -41,5 +41,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    <!--定位权限-->
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>请允许app访问您的定位，以便采集环境时使用</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>请允许app访问您的定位，以便采集环境时使用</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>请允许app访问您的定位，以便采集环境时使用</string>
+    
 </dict>
 </plist>

@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    [TTPermissionManager requestLocationWhenInUseAuth:^(BOOL isAuth) {
+//        NSLog(@"应用使用期间授权：%d",isAuth);
+//    }];
+//    [TTPermissionManager requestLocationAlwaysAuth:^(BOOL isAuth) {
+//        NSLog(@"一直定位授权：%d",isAuth);
+//    }];
     return YES;
 }
 
