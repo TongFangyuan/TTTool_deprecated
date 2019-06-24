@@ -1,38 +1,24 @@
 //
-//  UIColor+Addition.m
-//  Host
+//  UIColor+TTHex.m
+//  TTToolSamples
 //
-//  Created by admin on 2019/5/24.
-//  Copyright © 2019年 童方园. All rights reserved.
+//  Created by Tong on 2019/6/24.
+//  Copyright © 2019 tongfy. All rights reserved.
 //
 
-#import "UIColor+Addition.h"
+#import "UIColor+TTHex.h"
 
-@implementation UIColor (Addition)
+@implementation UIColor (TTHex)
 
-+ (UIColor *)red:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha {
-    return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha];
++ (UIColor *)tt_colorWithHex:(NSInteger)hex {
+    return [UIColor tt_colorWithHex:hex andAlpha:1.0];
+}
++ (UIColor *)tt_colorWithHex:(NSInteger)hex andAlpha:(CGFloat)alpha {
+    return [UIColor colorWithRed:((float)((hex & 0xff0000) >> 16))/255.0 green:((float)((hex & 0x00ff00) >> 8))/255.0 blue:((float)(hex & 0x0000ff))/255.0 alpha:alpha];
 }
 
-+ (NSArray *)convertColorToRGB:(UIColor *)color {
-    NSInteger numComponents = CGColorGetNumberOfComponents(color.CGColor);
-    NSArray *array = nil;
-    if (numComponents == 4) {
-        const CGFloat *components = CGColorGetComponents(color.CGColor);
-        array = @[@((int)(components[0] * 255)),
-                  @((int)(components[1] * 255)),
-                  @((int)(components[2] * 255))];
-    }
-    return array;
-}
-
-+ (UIColor *)colorWithHex:(NSInteger)hex {
-    return [UIColor colorWithRed:((float)((hex & 0xff0000) >> 16))/255.0 green:((float)((hex & 0x00ff00) >> 8))/255.0 blue:((float)(hex & 0x0000ff))/255.0 alpha:1.0];
-}
-
-+(UIColor *) colorWithHexString: (NSString *) hexString
-{
-    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
++ (UIColor *)tt_colorWithHexString:(NSString *)hexString {
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
     CGFloat alpha, red, blue, green;
     switch ([colorString length]) {
         case 3: // #RGB
@@ -69,13 +55,41 @@
     return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
 }
 
-+(CGFloat) colorComponentFrom: (NSString *) string start: (NSUInteger) start length: (NSUInteger) length
-{
++ (CGFloat)colorComponentFrom:(NSString *)string
+                        start: (NSUInteger)start
+                       length: (NSUInteger)length {
     NSString *substring = [string substringWithRange: NSMakeRange(start, length)];
     NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
     unsigned hexComponent;
     [[NSScanner scannerWithString: fullHex] scanHexInt: &hexComponent];
     return hexComponent / 255.0;
+}
+
++ (UIColor *)tt_colroWithRed:(NSInteger)red
+                       green:(NSInteger)green
+                        blue:(NSInteger)blue
+                       alpha:(CGFloat)alpha {
+    return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha];
+}
+
++ (UIColor *)tt_colorWithWholeRed:(CGFloat)red
+                            green:(CGFloat)green
+                             blue:(CGFloat)blue
+                            alpha:(CGFloat)alpha {
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
+
+//将颜色转换成RGB
++ (NSArray *)tt_convertColorToRGB:(UIColor *)color {
+    NSInteger numComponents = CGColorGetNumberOfComponents(color.CGColor);
+    NSArray *array = nil;
+    if (numComponents == 4) {
+        const CGFloat *components = CGColorGetComponents(color.CGColor);
+        array = @[@((int)(components[0] * 255)),
+                  @((int)(components[1] * 255)),
+                  @((int)(components[2] * 255))];
+    }
+    return array;
 }
 
 @end

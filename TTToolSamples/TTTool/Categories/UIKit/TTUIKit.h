@@ -11,7 +11,7 @@
 
 #import "UIViewController+TTAlert.h"
 #import "UIImage+TTCode.h"
-#import "UIColor+Addition.h"
+#import "UIColor+TTHex.h"
 #import "UIView+SYJXibConfiguration.h"
 
 #endif /* TTUIKit_h */

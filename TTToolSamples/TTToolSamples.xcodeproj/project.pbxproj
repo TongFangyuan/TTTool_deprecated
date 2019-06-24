@@ -35,10 +35,10 @@
 		8586AFA922C0AA4E0077B664 /* TTPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFA722C0AA4E0077B664 /* TTPermissionManager.m */; };
 		8586AFF122C0CF210077B664 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF022C0CF210077B664 /* SSKeychain.m */; };
 		8586AFF422C0CF970077B664 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF322C0CF970077B664 /* TTKeychainManager.m */; };
+		8586AFF722C0D6760077B664 /* UIColor+TTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF622C0D6760077B664 /* UIColor+TTHex.m */; };
 		D919EC6A5C6EC2C46784AAC9 /* Pods_TTToolSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */; };
 		DA4560A3229C095200525AA3 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609D229C095100525AA3 /* NSDictionary+String.m */; };
 		DA4560A4229C095200525AA3 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */; };
-		DA4560A5229C095200525AA3 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4560A2229C095200525AA3 /* UIColor+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,15 +102,15 @@
 		8586AFF022C0CF210077B664 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		8586AFF222C0CF970077B664 /* TTKeychainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTKeychainManager.h; sourceTree = "<group>"; };
 		8586AFF322C0CF970077B664 /* TTKeychainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKeychainManager.m; sourceTree = "<group>"; };
+		8586AFF522C0D6760077B664 /* UIColor+TTHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TTHex.h"; sourceTree = "<group>"; };
+		8586AFF622C0D6760077B664 /* UIColor+TTHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TTHex.m"; sourceTree = "<group>"; };
 		85C0803B22B33C150023DE39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		85C0803C22B33C2D0023DE39 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		A6FEBCE2E5A6255242A4911A /* Pods-TTToolSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolSamples.debug.xcconfig"; path = "Target Support Files/Pods-TTToolSamples/Pods-TTToolSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		DA45609D229C095100525AA3 /* NSDictionary+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+String.m"; sourceTree = "<group>"; };
 		DA45609E229C095100525AA3 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
 		DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYJXibConfiguration.m"; sourceTree = "<group>"; };
-		DA4560A0229C095100525AA3 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
 		DA4560A1229C095100525AA3 /* NSDictionary+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+String.h"; sourceTree = "<group>"; };
-		DA4560A2229C095200525AA3 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,8 +296,8 @@
 		8586AF8C22C0738B0077B664 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				DA4560A0229C095100525AA3 /* UIColor+Addition.h */,
-				DA4560A2229C095200525AA3 /* UIColor+Addition.m */,
+				8586AFF522C0D6760077B664 /* UIColor+TTHex.h */,
+				8586AFF622C0D6760077B664 /* UIColor+TTHex.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -614,7 +614,6 @@
 				DA4560A4229C095200525AA3 /* UIView+SYJXibConfiguration.m in Sources */,
 				8586AFF422C0CF970077B664 /* TTKeychainManager.m in Sources */,
 				8586AFA522C07D0C0077B664 /* TTRequestManager.m in Sources */,
-				DA4560A5229C095200525AA3 /* UIColor+Addition.m in Sources */,
 				84670719210022AB00B7D288 /* UIImage+TTCode.m in Sources */,
 				8467071A210022AB00B7D288 /* UIViewController+TTAlert.m in Sources */,
 				846706A72100205E00B7D288 /* main.m in Sources */,
@@ -630,6 +629,7 @@
 				8586AFF122C0CF210077B664 /* SSKeychain.m in Sources */,
 				848888592119466C00FBAC8F /* CodeGeneratViewController.m in Sources */,
 				845AAEF62105C61A008DA154 /* ResizeTransformViewController.m in Sources */,
+				8586AFF722C0D6760077B664 /* UIColor+TTHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
