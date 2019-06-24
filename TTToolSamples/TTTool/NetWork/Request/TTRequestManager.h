@@ -5,7 +5,7 @@
 //  Created by Tong on 2019/6/17.
 //  Copyright © 2019 ZhouJinhua. All rights reserved.
 //
-//  第三方依赖 AFN
+//  第三方依赖 AFN https://github.com/AFNetworking/AFNetworking
 //
 
 #import <Foundation/Foundation.h>
