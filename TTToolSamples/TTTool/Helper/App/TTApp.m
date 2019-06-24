@@ -10,9 +10,22 @@
 #import <sys/utsname.h>
 #include <sys/param.h>
 #include <sys/mount.h>
+#import <LocalAuthentication/LocalAuthentication.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
 
 @implementation TTApp
 
++ (void)saveObject:(id)object forKey:(NSString *)key
+{
+    [[NSUserDefaults standardUserDefaults] setObject:object forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (id)objectForKey:(NSString *)key
+{
+    return [NSUserDefaults.standardUserDefaults objectForKey:key];
+}
 
 + (NSString *)appVersion
 {
@@ -29,6 +42,14 @@
 + (NSString *)appName {
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     return [infoDic objectForKey:@"CFBundleDisplayName"];
+}
+
++ (NSString *)getModel
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString * platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    return platform;
 }
 
 + (NSString *)getDeviceName {
@@ -126,11 +147,36 @@
         freeSpace = (unsigned long long)(buf.f_bsize * buf.f_blocks);
     }
 
-    CGFloat KB = 1024.0;
+    CGFloat KB = 1000.0;
     CGFloat MB = KB*KB;
     CGFloat GB = MB*KB;
     
     return freeSpace/GB;
 }
 
++ (BOOL)isSupportFaceID
+{
+    BOOL isSupportFaceID = NO;
+    LAContext *myContext = [[LAContext alloc] init];
+    if (@available(iOS 11.0, *)) {
+        if (myContext.biometryType==LABiometryTypeFaceID) {
+            isSupportFaceID = YES;
+        }
+    }
+    return isSupportFaceID;
+}
+
++ (BOOL)isSIMInstalled
+{
+    CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
+    CTCarrier *carrier = [networkInfo subscriberCellularProvider];
+    if (!carrier.isoCountryCode) {
+        NSLog(@"没有安装SIM卡");
+        return NO;
+    }else{
+        NSLog(@"有安装SIM卡");
+        return YES;
+    }
+    
+}
 @end
