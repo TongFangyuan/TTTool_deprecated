@@ -10,6 +10,7 @@
 #define TTUIKit_h
 
 #import "UIViewController+TTAlert.h"
+#import "UIAlertController+TTAlert.h"
 #import "UIImage+TTCode.h"
 #import "UIColor+TTHex.h"
 #import "UIView+SYJXibConfiguration.h"
