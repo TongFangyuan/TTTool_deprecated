@@ -15,6 +15,7 @@
                confirmHandler:(void(^)(void))confirmHandle {
     [self tt_showAlertWithTitle:title message:message sourceVC:nil confirmHandler:confirmHandle cancelHandler:nil];
 }
+
 + (void)tt_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
                confirmHandler:(void(^)(void))confirmHandle
@@ -30,14 +31,14 @@
     
     UIAlertAction *confirmAlertAction = nil;
     if (confirmHandler) {
-      confirmAlertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+      confirmAlertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             confirmHandler();
         }];
     }
     
     UIAlertAction *cancelAlertAction = nil;
     if (cancelAlertAction) {
-        cancelAlertAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        cancelAlertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             cancelHandler();
         }];
     }

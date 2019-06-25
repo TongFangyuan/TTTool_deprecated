@@ -32,10 +32,10 @@
 #endif
 
 /******************************   图片   ******************************/
-#define TTGetImage(s) [UIImage imageNamed:s]
+#define TTGetImage(s) [UIImage imageNamed:(s)]
 
 /******************************   Xib   ******************************/
-#define kLoadXibViewWithNibName(n) [[[NSBundle mainBundle] loadNibNamed:n owner:nil options:nil] firstObject]
+#define kLoadXibViewWithNibName(n) [[[NSBundle mainBundle] loadNibNamed:(n) owner:nil options:nil] firstObject]
 
 /****************************** iPhone X 系列 ******************************/
 #define iPhoneX                ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
