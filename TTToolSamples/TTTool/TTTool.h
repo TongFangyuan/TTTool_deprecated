@@ -9,16 +9,10 @@
 #ifndef TTTool_h
 #define TTTool_h
 
-/******************************Helpers******************************/
+#import "TTNetWork.h"
 #import "TTHelper.h"
-
-/******************************Categories******************************/
 #import "TTCategoriesHeader.h"
-
-/****************************** Macro ******************************/
 #import "MacroHeader.h"
-
-/******************************   TTUITools   ******************************/
 #import "TTUITools.h"
 
 #endif /* TTTool_h */
