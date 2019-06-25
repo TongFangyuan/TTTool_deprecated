@@ -24,8 +24,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     NSLog(@"is iPhone X :%d", iPhoneX);
-    
-   
 }
 
 - (void)didReceiveMemoryWarning {

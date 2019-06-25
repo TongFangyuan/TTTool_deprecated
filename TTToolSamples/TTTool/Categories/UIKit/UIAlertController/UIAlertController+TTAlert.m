@@ -37,7 +37,7 @@
     }
     
     UIAlertAction *cancelAlertAction = nil;
-    if (cancelAlertAction) {
+    if (cancelHandler) {
         cancelAlertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             cancelHandler();
         }];
