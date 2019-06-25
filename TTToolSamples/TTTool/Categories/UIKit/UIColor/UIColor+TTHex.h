@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - HEX
 + (UIColor *)tt_colorWithHex:(NSInteger)hex;
-+ (UIColor *)tt_colorWithHex:(NSInteger)hex andAlpha:(CGFloat)alpha;
++ (UIColor *)tt_colorWithHex:(NSInteger)hex alpha:(CGFloat)alpha;
 + (UIColor *)tt_colorWithHexString:(NSString *)hexString;
 
 #pragma mark - RGB

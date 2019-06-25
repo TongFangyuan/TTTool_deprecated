@@ -13,7 +13,7 @@
 + (UIColor *)tt_colorWithHex:(NSInteger)hex {
     return [UIColor tt_colorWithHex:hex andAlpha:1.0];
 }
-+ (UIColor *)tt_colorWithHex:(NSInteger)hex andAlpha:(CGFloat)alpha {
++ (UIColor *)tt_colorWithHex:(NSInteger)hex alpha:(CGFloat)alpha {
     return [UIColor colorWithRed:((float)((hex & 0xff0000) >> 16))/255.0 green:((float)((hex & 0x00ff00) >> 8))/255.0 blue:((float)(hex & 0x0000ff))/255.0 alpha:alpha];
 }
 
