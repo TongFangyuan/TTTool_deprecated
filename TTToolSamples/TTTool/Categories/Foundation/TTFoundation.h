@@ -12,5 +12,6 @@
 #import "NSDictionary+String.h"
 #import "NSObject+TTKVO.h"
 #import "NSString+TTRegularExpression.h"
+#import "NSFileManager+TTFile.h"
 
 #endif /* TTFoundation_h */
