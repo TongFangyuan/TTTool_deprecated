@@ -25,8 +25,9 @@
 #endif
 
 /******************************   自定义Log   ******************************/
+
 #ifdef DEBUG
-#define TTLog(...) NSLog(__VA_ARGS__)
+#define TTLog(fmt,...) NSLog((@"[%s:%d行]" fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
 #else
 #define TTLog(...)
 #endif
