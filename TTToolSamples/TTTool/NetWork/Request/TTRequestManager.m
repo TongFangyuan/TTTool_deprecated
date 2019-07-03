@@ -37,7 +37,7 @@
         [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:YES];
     });
 
-    TTLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ",requestUrl,parameters);
+    NSLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ",requestUrl,parameters);
     
     if (type == CCRequestMethodTypeGET)
     {
@@ -45,14 +45,14 @@
         [manager GET:requestUrl parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            TTLog(@"reponse: %@",responseObject);
+            NSLog(@"reponse: %@",responseObject);
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 success(responseObject);
             });
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            TTLog(@"error: %@",error);
+            NSLog(@"error: %@",error);
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 faild(error);
@@ -65,13 +65,13 @@
         [manager POST:requestUrl parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            TTLog(@"reponse: %@",responseObject);
+            NSLog(@"reponse: %@",responseObject);
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 success(responseObject);
             });
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            TTLog(@"error: %@",error);
+            NSLog(@"error: %@",error);
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 faild(error);
@@ -105,22 +105,22 @@
 //    _format.mSampleRate = 16000.0f;
 //    NSData *wavData = [audioData jk_wavDataWithPCMFormat:_format];
     
-    TTLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ------- 上传的文件路径： %@ ",postURL,parameters,url);
+    NSLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ------- 上传的文件路径： %@ ",postURL,parameters,url);
     dispatch_main_async_safe(^{
         [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:YES];
     });
     [manager POST:postURL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         [formData appendPartWithFileData:audioData name:@"file" fileName:@"file.wav" mimeType:@"audio"];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        TTLog(@"upload audio progress %@",uploadProgress.localizedDescription);
+        NSLog(@"upload audio progress %@",uploadProgress.localizedDescription);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        TTLog(@"reponse: %@",responseObject);
+        NSLog(@"reponse: %@",responseObject);
         dispatch_main_async_safe(^{
             [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
             success(responseObject);
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        TTLog(@"error: %@",error);
+        NSLog(@"error: %@",error);
         dispatch_main_async_safe(^{
             [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
             faild(error);

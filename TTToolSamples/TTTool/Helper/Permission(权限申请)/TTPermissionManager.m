@@ -95,14 +95,14 @@ static TTPermissionManager* instance = nil;
     
     dispatch_main_async_safe(^{
         if (status==kCLAuthorizationStatusAuthorizedAlways||status==kCLAuthorizationStatusAuthorizedWhenInUse) {
-            TTLog(@"status = %d", status);
+            NSLog(@"status = %d", status);
             if(self.m_block) self.m_block(YES);
             self.locationManager = nil;
             self.m_block = nil;
         } else if(status==kCLAuthorizationStatusNotDetermined) {
-            TTLog(@"User has not yet made a choice with regards to this application");
+            NSLog(@"User has not yet made a choice with regards to this application");
         } else {
-            TTLog(@"not auth status = %d", status);
+            NSLog(@"not auth status = %d", status);
             if(self.m_block) self.m_block(NO);
             self.locationManager = nil;
             self.m_block = nil;
