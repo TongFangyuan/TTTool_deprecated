@@ -40,6 +40,7 @@
 		8591877722C3099600E2DC9A /* TTAES128Encrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877322C3099600E2DC9A /* TTAES128Encrypter.m */; };
 		8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877622C3099600E2DC9A /* NSData+AES128TL.m */; };
 		8591877D22C30E6C00E2DC9A /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877B22C30E6C00E2DC9A /* NSFileManager+TTFile.m */; };
+		85B80D1622CDFCB80072A1B1 /* NSBundle+TTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B80D1522CDFCB80072A1B1 /* NSBundle+TTBundle.m */; };
 		D919EC6A5C6EC2C46784AAC9 /* Pods_TTToolSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */; };
 		DA4560A3229C095200525AA3 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609D229C095100525AA3 /* NSDictionary+String.m */; };
 		DA4560A4229C095200525AA3 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */; };
@@ -118,6 +119,8 @@
 		8591877922C309B100E2DC9A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8591877B22C30E6C00E2DC9A /* NSFileManager+TTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TTFile.m"; sourceTree = "<group>"; };
 		8591877C22C30E6C00E2DC9A /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TTFile.h"; sourceTree = "<group>"; };
+		85B80D1422CDFCB80072A1B1 /* NSBundle+TTBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TTBundle.h"; sourceTree = "<group>"; };
+		85B80D1522CDFCB80072A1B1 /* NSBundle+TTBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TTBundle.m"; sourceTree = "<group>"; };
 		85C0803B22B33C150023DE39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		85C0803C22B33C2D0023DE39 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		A6FEBCE2E5A6255242A4911A /* Pods-TTToolSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolSamples.debug.xcconfig"; path = "Target Support Files/Pods-TTToolSamples/Pods-TTToolSamples.debug.xcconfig"; sourceTree = "<group>"; };
@@ -339,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF9222C074020077B664 /* TTFoundation.h */,
+				85B80D1322CDFC920072A1B1 /* NSBundle */,
 				8591877A22C30E6C00E2DC9A /* NSFileManager */,
 				8586AF9322C0751E0077B664 /* NSString */,
 				8586AF9122C073E60077B664 /* NSDictionary */,
@@ -494,6 +498,15 @@
 				8591877C22C30E6C00E2DC9A /* NSFileManager+TTFile.h */,
 			);
 			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		85B80D1322CDFC920072A1B1 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				85B80D1422CDFCB80072A1B1 /* NSBundle+TTBundle.h */,
+				85B80D1522CDFCB80072A1B1 /* NSBundle+TTBundle.m */,
+			);
+			path = NSBundle;
 			sourceTree = "<group>";
 		};
 		85C0803A22B33B9D0023DE39 /* Macro(宏定义) */ = {
@@ -681,6 +694,7 @@
 				84670718210022AB00B7D288 /* TTErrorView.m in Sources */,
 				846706E5210021B300B7D288 /* MainViewController.m in Sources */,
 				84670717210022AB00B7D288 /* TTApp.m in Sources */,
+				85B80D1622CDFCB80072A1B1 /* NSBundle+TTBundle.m in Sources */,
 				8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */,
 				846706992100205D00B7D288 /* AppDelegate.m in Sources */,
 				84670716210022AB00B7D288 /* NSObject+TTKVO.m in Sources */,
