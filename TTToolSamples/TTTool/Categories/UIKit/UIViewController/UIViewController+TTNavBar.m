@@ -8,20 +8,12 @@
 
 #import "UIViewController+TTNavBar.h"
 
-#ifndef TTDefaultTextColor
-#define TTDefaultTextColor [UIColor blackColor]
-#endif
-
-#ifndef TTDEfaultFont
-#define TTDEfaultFont      [UIFont systemFontOfSize:15 weight:UIFontWeightSemibold]
-#endif
-
 @implementation UIViewController (TTNavBar)
 
 - (void)tt_setLeftBarTitle:(NSString *)title
                       font:(nullable UIFont *)font
                  textColor:(nullable UIColor *)textColor {
-    if (title.length<=0) return;
+    if (!title)          return;
     if (!font)           font = TTDEfaultFont;
     if (!textColor)      textColor = TTDefaultTextColor;
 
@@ -37,7 +29,7 @@
 - (void)tt_setRightBarTitle:(NSString *)title
                        font:(nullable UIFont *)font
                   textColor:(nullable UIColor *)textColor {
-    if (title.length<=0) return;
+    if (!title)          return;
     if (!font)           font = TTDEfaultFont;
     if (!textColor)      textColor = TTDefaultTextColor;
     
@@ -53,7 +45,7 @@
 - (void)tt_setTitle:(NSString *)title
                font:(nullable UIFont *)font
           textColor:(nullable UIColor *)textColor {
-    if (title.length<=0) return;
+    if (!title)          return;
     if (!font)           font = TTDEfaultFont;
     if (!textColor)      textColor = TTDefaultTextColor;
     
