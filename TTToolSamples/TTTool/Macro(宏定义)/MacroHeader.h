@@ -25,9 +25,8 @@
 #endif
 
 /******************************   自定义Log   ******************************/
-
 #ifdef DEBUG
-#define NSLog(fmt,...) NSLog((@"[%s:%d行]" fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
+#define NSLog(fmt,...) NSLog((@"[%s:%d行] " fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
 #else
 #define NSLog(...)
 #endif
@@ -68,5 +67,13 @@
 #define kScreenHeight    [UIScreen mainScreen].bounds.size.height
 
 #define WS(s)           __weak typeof(self)s =self;
+
+/******************************   Color   ******************************/
+#define kSepertorColor    [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]
+#define kButtonTintColor  [UIColor colorWithRed:0.95 green:0.55 blue:0.00 alpha:1.00]
+#define kTextWhiteColor   [UIColor colorWithRed:0.99 green:0.99 blue:0.99 alpha:1.00]
+#define kTextGrayColor    [UIColor colorWithRed:0.56 green:0.55 blue:0.57 alpha:1.00]
+#define kBlackGrayColor   [UIColor colorWithRed:0.07 green:0.07 blue:0.07 alpha:1.00]
+#define kBlackColor       [UIColor colorWithRed:0.05 green:0.05 blue:0.05 alpha:1.00]
 
 #endif /* MacroHeader_h */

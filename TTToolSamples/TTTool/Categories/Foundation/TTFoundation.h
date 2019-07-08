@@ -14,5 +14,6 @@
 #import "NSString+TTRegularExpression.h"
 #import "NSFileManager+TTFile.h"
 #import "NSBundle+TTBundle.h"
+#import "NSArray+TTPlist.h"
 
 #endif /* TTFoundation_h */

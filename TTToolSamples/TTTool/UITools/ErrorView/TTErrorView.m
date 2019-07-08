@@ -17,29 +17,30 @@ static CGFloat kHeight = 20;
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self=[super initWithCoder:aDecoder]) {
-        self.backgroundColor = [UIColor redColor];
-        self.textAlignment = NSTextAlignmentCenter;
-        self.textColor = [UIColor whiteColor];
-        self.font = [UIFont systemFontOfSize:12];
+        [self setUPUI];
     }
     return self;
 }
 
 - (instancetype)init{
     if (self = [super init]) {
-        self.backgroundColor = [UIColor redColor];
-        self.textAlignment = NSTextAlignmentCenter;
-        self.textColor = [UIColor whiteColor];
-        self.font = [UIFont systemFontOfSize:12];
+        [self setUPUI];
     }
     return self;
+}
+
+- (void)setUPUI {
+    self.backgroundColor = [UIColor colorWithRed:0.97 green:0.15 blue:0.15 alpha:1.00];
+        self.textAlignment = NSTextAlignmentCenter;
+        self.textColor = [UIColor whiteColor];
+    self.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f];
 }
 
 + (TTErrorView *)tt_showError:(NSString *)message onView:(UIView *)view {
     TTErrorView *erroView = erroView = [[TTErrorView alloc] init];
     [view addSubview:erroView];
     [erroView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(view);
+        make.left.width.equalTo(view);
         make.height.mas_equalTo(kHeight);
         make.top.mas_equalTo(-kHeight);
     }];
