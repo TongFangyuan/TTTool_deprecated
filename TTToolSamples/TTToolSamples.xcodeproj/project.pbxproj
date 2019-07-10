@@ -38,6 +38,7 @@
 		8586AFF122C0CF210077B664 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF022C0CF210077B664 /* SSKeychain.m */; };
 		8586AFF422C0CF970077B664 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF322C0CF970077B664 /* TTKeychainManager.m */; };
 		8586AFF722C0D6760077B664 /* UIColor+TTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFF622C0D6760077B664 /* UIColor+TTHex.m */; };
+		8589BE4522D5D0FC000BBE14 /* UIFont+TTPingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589BE4422D5D0FC000BBE14 /* UIFont+TTPingFang.m */; };
 		8591877722C3099600E2DC9A /* TTAES128Encrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877322C3099600E2DC9A /* TTAES128Encrypter.m */; };
 		8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877622C3099600E2DC9A /* NSData+AES128TL.m */; };
 		8591877D22C30E6C00E2DC9A /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877B22C30E6C00E2DC9A /* NSFileManager+TTFile.m */; };
@@ -116,6 +117,8 @@
 		8586AFF322C0CF970077B664 /* TTKeychainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTKeychainManager.m; sourceTree = "<group>"; };
 		8586AFF522C0D6760077B664 /* UIColor+TTHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TTHex.h"; sourceTree = "<group>"; };
 		8586AFF622C0D6760077B664 /* UIColor+TTHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TTHex.m"; sourceTree = "<group>"; };
+		8589BE4322D5D0FC000BBE14 /* UIFont+TTPingFang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+TTPingFang.h"; sourceTree = "<group>"; };
+		8589BE4422D5D0FC000BBE14 /* UIFont+TTPingFang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TTPingFang.m"; sourceTree = "<group>"; };
 		8591877122C3099600E2DC9A /* TTEncryptHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEncryptHeader.h; sourceTree = "<group>"; };
 		8591877322C3099600E2DC9A /* TTAES128Encrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAES128Encrypter.m; sourceTree = "<group>"; };
 		8591877422C3099600E2DC9A /* NSData+AES128TL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128TL.h"; sourceTree = "<group>"; };
@@ -311,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF8A22C073710077B664 /* TTUIKit.h */,
+				8589BE4222D5D0FC000BBE14 /* UIFont */,
 				85B80D1B22CE0A880072A1B1 /* UIStoryboard */,
 				8586AFF822C0D96C0077B664 /* UIAlertController */,
 				8586AF8E22C073B30077B664 /* UIViewController */,
@@ -490,6 +494,15 @@
 				851463D222C1ADD9005E0F0A /* UIAlertController+TTAlert.m */,
 			);
 			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		8589BE4222D5D0FC000BBE14 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				8589BE4322D5D0FC000BBE14 /* UIFont+TTPingFang.h */,
+				8589BE4422D5D0FC000BBE14 /* UIFont+TTPingFang.m */,
+			);
+			path = UIFont;
 			sourceTree = "<group>";
 		};
 		8591877022C3099600E2DC9A /* Encryption */ = {
@@ -707,6 +720,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8589BE4522D5D0FC000BBE14 /* UIFont+TTPingFang.m in Sources */,
 				8461FAAA210EEC2D004C1D4E /* BezierPathVC.m in Sources */,
 				851463D322C1ADD9005E0F0A /* UIAlertController+TTAlert.m in Sources */,
 				DA4560A3229C095200525AA3 /* NSDictionary+String.m in Sources */,

@@ -16,5 +16,6 @@
 #import "UIView+SYJXibConfiguration.h"
 #import "UIStoryboard+TTCategory.h"
 #import "UIViewController+TTNavBar.h"
+#import "UIFont+TTPingFang.h"
 
 #endif /* TTUIKit_h */
