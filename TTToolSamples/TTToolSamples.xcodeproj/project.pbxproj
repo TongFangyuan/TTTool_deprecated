@@ -31,6 +31,7 @@
 		848888592119466C00FBAC8F /* CodeGeneratViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848888582119466C00FBAC8F /* CodeGeneratViewController.m */; };
 		851463D322C1ADD9005E0F0A /* UIAlertController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 851463D222C1ADD9005E0F0A /* UIAlertController+TTAlert.m */; };
 		8518F3AA22CEF5A200167A6F /* NSArray+TTPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 8518F3A922CEF5A200167A6F /* NSArray+TTPlist.m */; };
+		8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */; };
 		8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AF9522C075890077B664 /* NSString+TTRegularExpression.m */; };
 		8586AF9922C07AFE0077B664 /* BYFoundationLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AF9822C07AFE0077B664 /* BYFoundationLog.m */; };
 		8586AFA522C07D0C0077B664 /* TTRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AFA422C07D0C0077B664 /* TTRequestManager.m */; };
@@ -96,6 +97,8 @@
 		8518F3A822CEF5A200167A6F /* NSArray+TTPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TTPlist.h"; sourceTree = "<group>"; };
 		8518F3A922CEF5A200167A6F /* NSArray+TTPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TTPlist.m"; sourceTree = "<group>"; };
 		855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTToolSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8564B78622DDA71D001DF514 /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
+		8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
 		8586AF8822C073080077B664 /* TTCategoriesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCategoriesHeader.h; sourceTree = "<group>"; };
 		8586AF8A22C073710077B664 /* TTUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTUIKit.h; sourceTree = "<group>"; };
 		8586AF9222C074020077B664 /* TTFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTFoundation.h; sourceTree = "<group>"; };
@@ -310,10 +313,20 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		8564B78522DDA6F9001DF514 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				8564B78622DDA71D001DF514 /* UIApplication+TTKeyWindow.h */,
+				8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		8586AF8922C073430077B664 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				8586AF8A22C073710077B664 /* TTUIKit.h */,
+				8564B78522DDA6F9001DF514 /* UIApplication */,
 				8589BE4222D5D0FC000BBE14 /* UIFont */,
 				85B80D1B22CE0A880072A1B1 /* UIStoryboard */,
 				8586AFF822C0D96C0077B664 /* UIAlertController */,
@@ -734,6 +747,7 @@
 				84670719210022AB00B7D288 /* UIImage+TTCode.m in Sources */,
 				8467071A210022AB00B7D288 /* UIViewController+TTAlert.m in Sources */,
 				8591877722C3099600E2DC9A /* TTAES128Encrypter.m in Sources */,
+				8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */,
 				846706A72100205E00B7D288 /* main.m in Sources */,
 				8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */,
 				8591877D22C30E6C00E2DC9A /* NSFileManager+TTFile.m in Sources */,

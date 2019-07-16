@@ -3,7 +3,7 @@
 //  MobileAir
 //
 //  Created by 沈赟杰 on 2019/4/30.
-//  Copyright © 2019 芯中芯. All rights reserved.
+//  Copyright © 2019 tongfy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -17,5 +17,6 @@
 #import "UIStoryboard+TTCategory.h"
 #import "UIViewController+TTNavBar.h"
 #import "UIFont+TTPingFang.h"
+#import "UIApplication+TTKeyWindow.h"
 
 #endif /* TTUIKit_h */
