@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
 target 'TTToolSamples' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,5 +8,6 @@ target 'TTToolSamples' do
   # Pods for TTToolSamples
   pod 'AFNetworking', '~> 3.0'
   pod 'IQKeyboardManager', '~> 6.2.0'
-  pod 'Masonry', '~> 1.1.0'  
+  pod 'Masonry', '~> 1.1.0'
+  pod 'MBProgressHUD'
 end

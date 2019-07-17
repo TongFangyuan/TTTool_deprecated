@@ -10,5 +10,6 @@
 #define TTUITools_h
 
 #import "TTErrorView.h"
+#import "TTToastTool.h"
 
 #endif /* TTUITools_h */
