@@ -10,7 +10,7 @@
 
 @implementation UIStoryboard (TTCategory)
 
-+ (UIViewController *)tt_loadViewControllerWithsbName:(NSString *)sbName
++ (__kindof UIViewController *)tt_loadViewControllerWithsbName:(NSString *)sbName
                                            identifier:(NSString *)identifier
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:sbName bundle:nil];

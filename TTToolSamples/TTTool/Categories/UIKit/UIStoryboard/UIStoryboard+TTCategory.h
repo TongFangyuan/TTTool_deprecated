@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param sbName Storyboard名称
  @param identifier 控制器的唯一标识
  */
-+ (UIViewController *)tt_loadViewControllerWithsbName:(NSString *)sbName
++ (__kindof UIViewController *)tt_loadViewControllerWithsbName:(NSString *)sbName
                                            identifier:(NSString *)identifier;
 @end
 

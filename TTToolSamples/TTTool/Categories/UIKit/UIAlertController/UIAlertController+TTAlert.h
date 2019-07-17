@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)tt_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
-               confirmHandler:(void(^)(void))confirmHandle;
+               confirmHandler:(void(^ _Nullable)(void))confirmHandle;
 /**
  Alert弹窗，有确定和取消按钮
  
@@ -33,8 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)tt_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
-               confirmHandler:(void(^)(void))confirmHandle
-                cancelHandler:(void(^)(void))cancelHandler;
+               confirmHandler:(void(^ _Nullable)(void))confirmHandle
+                cancelHandler:(void(^ _Nullable)(void))cancelHandler;
 
 /**
  Alert弹窗，有确定和取消按钮
