@@ -39,14 +39,18 @@ NS_ASSUME_NONNULL_BEGIN
                        font:(nullable UIFont *)font
                   textColor:(nullable UIColor *)textColor;
 /** 设置导航栏中间标题 */
-- (void)tt_setTitle:(NSString *)title
+- (void)tt_setTitle:(nullable NSString *)title
                font:(nullable UIFont *)font
           textColor:(nullable UIColor *)textColor;
 
 
 #pragma mark - 设置导航栏Item
 - (void)tt_setLeftBarButtonItemWithView:(UIView *)view;
+- (void)tt_setLeftBarButtonItemWithViews:(NSArray <UIView *> *)views;
+
 - (void)tt_setRightBarButtonItemWithView:(UIView *)view;
+- (void)tt_setRightBarButtonItemWithViews:(NSArray <UIView *> *)views;
+
 - (void)tt_setTitleView:(UIView *)titleView;
 
 @end

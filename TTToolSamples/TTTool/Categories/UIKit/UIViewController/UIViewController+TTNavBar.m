@@ -42,10 +42,13 @@
     [self tt_setRightBarButtonItemWithView:btn];
 }
 
-- (void)tt_setTitle:(NSString *)title
+- (void)tt_setTitle:(nullable NSString *)title
                font:(nullable UIFont *)font
           textColor:(nullable UIColor *)textColor {
-    if (!title)          return;
+    if (!title) {
+        self.navigationItem.titleView = nil;
+        return;
+    }
     if (!font)           font = TTDEfaultFont;
     if (!textColor)      textColor = TTDefaultTextColor;
     
@@ -62,9 +65,27 @@
     self.navigationItem.leftBarButtonItem = item;
 }
 
+- (void)tt_setLeftBarButtonItemWithViews:(NSArray <UIView *> *)views {
+    NSMutableArray *mutArray = [NSMutableArray array];
+    for (UIView *obj in views) {
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:obj];
+        [mutArray addObject:item];
+    }
+    self.navigationItem.leftBarButtonItems = mutArray;
+}
+
 - (void)tt_setRightBarButtonItemWithView:(UIView *)view {
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:view];
     self.navigationItem.rightBarButtonItem = item;
+}
+
+- (void)tt_setRightBarButtonItemWithViews:(NSArray<UIView *> *)views {
+    NSMutableArray *mutArray = [NSMutableArray array];
+    for (UIView *obj in views) {
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:obj];
+        [mutArray addObject:item];
+    }
+    self.navigationItem.rightBarButtonItems = mutArray;
 }
 
 - (void)tt_setTitleView:(UIView *)titleView {
