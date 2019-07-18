@@ -15,5 +15,7 @@
 #import "NSFileManager+TTFile.h"
 #import "NSBundle+TTBundle.h"
 #import "NSArray+TTPlist.h"
+#import "NSData+TTAES128.h"
+#import "NSData+TTHexString.h"
 
 #endif /* TTFoundation_h */
