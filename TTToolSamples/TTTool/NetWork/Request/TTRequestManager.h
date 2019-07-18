@@ -13,9 +13,9 @@
 #import "AFNetworking.h"
 
 typedef enum : NSUInteger {
-    CCRequestMethodTypeGET,
-    CCRequestMethodTypePOST,
-} CCRequestMethodType;
+    TTRequestMethodTypeGET,
+    TTRequestMethodTypePOST,
+} TTRequestMethodType;
 
 typedef void(^SuccessBlock)(id _Nullable responseObject);
 
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  success  : 请求成功返回
  *  faild  : 请求失败返回
  */
-+ (void)sendRequestWithRequestMethodType:(CCRequestMethodType)type
++ (void)sendRequestWithRequestMethodType:(TTRequestMethodType)type
                           requestAPICode:(NSString *)code
                        requestParameters:(nullable NSDictionary *)parameters
                            requestHeader:(nullable NSDictionary *)headerParameters

@@ -11,7 +11,7 @@
 @implementation TTRequestManager
 
 // 请求API
-+ (void)sendRequestWithRequestMethodType:(CCRequestMethodType)type
++ (void)sendRequestWithRequestMethodType:(TTRequestMethodType)type
                           requestAPICode:(NSString *)code
                        requestParameters:(NSDictionary *)parameters
                            requestHeader:(NSDictionary *)headerParameters
@@ -37,10 +37,10 @@
         [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:YES];
     });
 
-    NSString *method = type==CCRequestMethodTypeGET ? @"GET" : @"POST";
+    NSString *method = type==TTRequestMethodTypeGET ? @"GET" : @"POST";
     TTNetLog(@"HttpRequest:\n[\n  Type:%@\n  Header:%@\n  Url:%@\n  params:%@\n]",method,manager.requestSerializer.HTTPRequestHeaders,requestUrl,parameters);
 
-    if (type == CCRequestMethodTypeGET)
+    if (type == TTRequestMethodTypeGET)
     {
         // Get请求
         [manager GET:requestUrl parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -103,22 +103,22 @@
     NSURL *url = [NSURL URLWithString:filepath];
     NSData *audioData = [NSData dataWithContentsOfURL:url];
     
-    NSLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ------- 上传的文件路径： %@ ",postURL,parameters,url);
+    TTNetLog(@"HttpRequest:\n[\n  Type:%@\n  Header:%@\n  Url:%@\n  params:%@\n]",@"POST",manager.requestSerializer.HTTPRequestHeaders,postURL,parameters);
     dispatch_main_async_safe(^{
         [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:YES];
     });
     [manager POST:postURL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         [formData appendPartWithFileData:audioData name:@"file" fileName:@"file.wav" mimeType:@"audio"];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        NSLog(@"upload audio progress %@",uploadProgress.localizedDescription);
+        TTNetLog(@"upload audio progress %@",uploadProgress.localizedDescription);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"reponse: %@",responseObject);
+        TTNetLog(@"HttpResponse:\n[\n  State:success\n  Type:%@\n  Url:%@\n  result:%@\n]\n",@"POST",postURL,responseObject);
         dispatch_main_async_safe(^{
             [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
             success(responseObject);
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"error: %@",error);
+        TTNetLog(@"HttpResponse:\n[\n  State:fail\n  Type:%@\n  Url:%@\n  result:%@\n]\n",@"POST",postURL,error);
         dispatch_main_async_safe(^{
             [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
             faild(error);
