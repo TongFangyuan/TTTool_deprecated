@@ -37,26 +37,30 @@
         [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:YES];
     });
 
-    NSLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ",requestUrl,parameters);
-    
+    NSString *method = type==CCRequestMethodTypeGET ? @"GET" : @"POST";
+    TTNetLog(@"HttpRequest:\n[\n  Type:%@\n  Header:%@\n  Url:%@\n  params:%@\n]",method,manager.requestSerializer.HTTPRequestHeaders,requestUrl,parameters);
+
     if (type == CCRequestMethodTypeGET)
     {
         // Get请求
         [manager GET:requestUrl parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSLog(@"reponse: %@",responseObject);
+            TTNetLog(@"HttpResponse:\n[\n  State:success\n  Type:%@\n  Url:%@\n  result:%@\n]\n",method,requestUrl,responseObject);
+            
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 success(responseObject);
             });
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            NSLog(@"error: %@",error);
+            TTNetLog(@"HttpResponse:\n[\n  State:fail\n  Type:%@\n  Url:%@\n  result:%@\n]\n",method,requestUrl,error);
+            
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 faild(error);
             });
+            
         }];
     }
     else
@@ -65,17 +69,21 @@
         [manager POST:requestUrl parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSLog(@"reponse: %@",responseObject);
+            TTNetLog(@"HttpResponse:\n[\n  State:success\n  Type:%@\n  Url:%@\n  result:%@\n]\n",method,requestUrl,responseObject);
+           
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 success(responseObject);
             });
+            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            NSLog(@"error: %@",error);
+            TTNetLog(@"HttpResponse:\n[\n  State:fail\n  Type:%@\n  Url:%@\n  result:%@\n]\n",method,requestUrl,error);
+           
             dispatch_main_async_safe(^{
                 [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
                 faild(error);
             });
+            
         }];
     }
 }
@@ -94,16 +102,6 @@
     NSString *postURL = [NSString stringWithFormat:@"%@%@",REQUEST,code];
     NSURL *url = [NSURL URLWithString:filepath];
     NSData *audioData = [NSData dataWithContentsOfURL:url];
-    
-//    AudioStreamBasicDescription _format;
-//    _format.mFormatID = kAudioFormatLinearPCM;
-//    _format.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
-//    _format.mBitsPerChannel = 16;
-//    _format.mChannelsPerFrame = 1;
-//    _format.mBytesPerPacket = _format.mBytesPerFrame = (_format.mBitsPerChannel / 8) * _format.mChannelsPerFrame;
-//    _format.mFramesPerPacket = 1;
-//    _format.mSampleRate = 16000.0f;
-//    NSData *wavData = [audioData jk_wavDataWithPCMFormat:_format];
     
     NSLog(@"----- 请求的接口：%@ ------- 请求的参数： %@ ------- 上传的文件路径： %@ ",postURL,parameters,url);
     dispatch_main_async_safe(^{

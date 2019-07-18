@@ -24,4 +24,12 @@
 #define AudioUpload   @"/audio/upload"
 #define AudioFinish   @"/audio/finish"
 
+
+#ifdef DEBUG
+#define TTNetLog(xx, ...)  NSLog(@"%s(%d): \n\n" xx "\n", __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define TTNetLog(xx, ...)
+#endif
+
+
 #endif /* RequestHeader_h */
