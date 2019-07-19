@@ -31,14 +31,14 @@
     
     UIAlertAction *confirmAlertAction = nil;
     if (confirmHandler) {
-      confirmAlertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+      confirmAlertAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"确定", @"TTAlert", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             confirmHandler();
         }];
     }
     
     UIAlertAction *cancelAlertAction = nil;
     if (cancelHandler) {
-        cancelAlertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        cancelAlertAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"取消", @"TTAlert", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             cancelHandler();
         }];
     }

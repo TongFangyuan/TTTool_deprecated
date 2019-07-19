@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "AttributedString"; ObjectID = "55w-5r-DG3"; */
+"55w-5r-DG3.text" = "AttributedString";
+
+/* Class = "UINavigationController"; title = "TTToolSamples"; ObjectID = "EmA-8a-vUk"; */
+"EmA-8a-vUk.title" = "TTToolSamples";
+
+/* Class = "UILabel"; text = "BezierPathVC"; ObjectID = "NiL-Ta-8tW"; */
+"NiL-Ta-8tW.text" = "BezierPathVC";
+
+/* Class = "UILabel"; text = "CoreImage"; ObjectID = "Sey-z7-c9T"; */
+"Sey-z7-c9T.text" = "CoreImage";
+
+/* Class = "UINavigationItem"; title = "TTToolSamples"; ObjectID = "XMJ-Kg-2Ya"; */
+"XMJ-Kg-2Ya.title" = "TTToolSamples";
+
+/* Class = "UILabel"; text = "ReszieTransformView"; ObjectID = "ayr-Z6-c2h"; */
+"ayr-Z6-c2h.text" = "ReszieTransformView";
+
+/* Class = "UILabel"; text = "CodeGenerater"; ObjectID = "i8O-d6-6IF"; */
+"i8O-d6-6IF.text" = "CodeGenerater";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "sxj-1F-uC3"; */
+"sxj-1F-uC3.text" = "Title";
+
+/* Class = "UITableViewSection"; headerTitle = "Study"; ObjectID = "tqI-U4-ZOP"; */
+"tqI-U4-ZOP.headerTitle" = "Study";
+
+/* Class = "UITableViewSection"; headerTitle = "Samples"; ObjectID = "wxy-62-N4A"; */
+"wxy-62-N4A.headerTitle" = "Samples";

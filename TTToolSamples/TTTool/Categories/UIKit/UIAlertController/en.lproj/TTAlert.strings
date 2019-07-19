@@ -1,0 +1,10 @@
+/* 
+  TTAlert.strings
+  TTToolSamples
+
+  Created by Tong on 2019/7/19.
+  Copyright © 2019 tongfy. All rights reserved.
+*/
+"确定" = "Confirm";
+"取消" = "Cancel";
+

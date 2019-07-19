@@ -37,6 +37,7 @@
 		8521D33022E1524F00F635BF /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D32F22E1524F00F635BF /* UIViewController+TTView.m */; };
 		8521D33522E16AB700F635BF /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33422E16AB700F635BF /* UIView+TTGesture.m */; };
 		8521D33922E1706600F635BF /* UIView+TTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33822E1706600F635BF /* UIView+TTKeyboard.m */; };
+		8521D39422E1B8FB00F635BF /* TTAlert.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8521D39622E1B8FB00F635BF /* TTAlert.strings */; };
 		8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */; };
 		8582377622DECEA10029F54E /* TTToastTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8582377522DECEA10029F54E /* TTToastTool.m */; };
 		8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AF9522C075890077B664 /* NSString+TTRegularExpression.m */; };
@@ -115,6 +116,10 @@
 		8521D33422E16AB700F635BF /* UIView+TTGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTGesture.m"; sourceTree = "<group>"; };
 		8521D33722E1706600F635BF /* UIView+TTKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TTKeyboard.h"; sourceTree = "<group>"; };
 		8521D33822E1706600F635BF /* UIView+TTKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTKeyboard.m"; sourceTree = "<group>"; };
+		8521D39522E1B8FB00F635BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TTAlert.strings; sourceTree = "<group>"; };
+		8521D39722E1B95600F635BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		8521D39822E1B95600F635BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8521D39922E1B95600F635BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TTAlert.strings"; sourceTree = "<group>"; };
 		855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTToolSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8564B78622DDA71D001DF514 /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
 		8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
@@ -567,6 +572,7 @@
 			children = (
 				851463D122C1ADD9005E0F0A /* UIAlertController+TTAlert.h */,
 				851463D222C1ADD9005E0F0A /* UIAlertController+TTAlert.m */,
+				8521D39622E1B8FB00F635BF /* TTAlert.strings */,
 			);
 			path = UIAlertController;
 			sourceTree = "<group>";
@@ -718,6 +724,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 8467068B2100205D00B7D288;
 			productRefGroup = 846706952100205D00B7D288 /* Products */;
@@ -739,6 +746,7 @@
 				846706A12100205E00B7D288 /* Assets.xcassets in Resources */,
 				8461FAAC210EEC3A004C1D4E /* BezierPath.storyboard in Resources */,
 				8467069F2100205D00B7D288 /* Main.storyboard in Resources */,
+				8521D39422E1B8FB00F635BF /* TTAlert.strings in Resources */,
 				845AAEF82105C628008DA154 /* ResizeTransformUIView.storyboard in Resources */,
 				8467071E210030D100B7D288 /* CoreImage.storyboard in Resources */,
 				845AAF022105CC3C008DA154 /* AttributedString.storyboard in Resources */,
@@ -844,6 +852,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8467069E2100205D00B7D288 /* Base */,
+				8521D39722E1B95600F635BF /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -852,8 +861,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				846706A32100205E00B7D288 /* Base */,
+				8521D39822E1B95600F635BF /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8521D39622E1B8FB00F635BF /* TTAlert.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8521D39522E1B8FB00F635BF /* en */,
+				8521D39922E1B95600F635BF /* zh-Hans */,
+			);
+			name = TTAlert.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -863,6 +882,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -921,6 +941,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

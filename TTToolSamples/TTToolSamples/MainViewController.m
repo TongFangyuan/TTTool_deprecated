@@ -24,6 +24,12 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     NSLog(@"is iPhone X :%d", iPhoneX);
+    
+    [UIAlertController tt_showAlertWithTitle:@"提示" message:@"弹窗测试" sourceVC:self confirmHandler:^{
+        
+    } cancelHandler:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
