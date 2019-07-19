@@ -35,6 +35,8 @@
 		851CE16322E016DF008AD92F /* NSData+TTAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CE15F22E016DE008AD92F /* NSData+TTAES128.m */; };
 		8521D32D22E14E1B00F635BF /* UIView+TTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D32C22E14E1B00F635BF /* UIView+TTFrame.m */; };
 		8521D33022E1524F00F635BF /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D32F22E1524F00F635BF /* UIViewController+TTView.m */; };
+		8521D33522E16AB700F635BF /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33422E16AB700F635BF /* UIView+TTGesture.m */; };
+		8521D33922E1706600F635BF /* UIView+TTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33822E1706600F635BF /* UIView+TTKeyboard.m */; };
 		8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */; };
 		8582377622DECEA10029F54E /* TTToastTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8582377522DECEA10029F54E /* TTToastTool.m */; };
 		8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AF9522C075890077B664 /* NSString+TTRegularExpression.m */; };
@@ -109,6 +111,10 @@
 		8521D32C22E14E1B00F635BF /* UIView+TTFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTFrame.m"; sourceTree = "<group>"; };
 		8521D32E22E1524F00F635BF /* UIViewController+TTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTView.h"; sourceTree = "<group>"; };
 		8521D32F22E1524F00F635BF /* UIViewController+TTView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTView.m"; sourceTree = "<group>"; };
+		8521D33322E16AB700F635BF /* UIView+TTGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TTGesture.h"; sourceTree = "<group>"; };
+		8521D33422E16AB700F635BF /* UIView+TTGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTGesture.m"; sourceTree = "<group>"; };
+		8521D33722E1706600F635BF /* UIView+TTKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TTKeyboard.h"; sourceTree = "<group>"; };
+		8521D33822E1706600F635BF /* UIView+TTKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTKeyboard.m"; sourceTree = "<group>"; };
 		855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTToolSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8564B78622DDA71D001DF514 /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
 		8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
@@ -341,6 +347,13 @@
 			path = NSData;
 			sourceTree = "<group>";
 		};
+		8521D33622E16C0700F635BF /* UIKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKeyboard;
+			sourceTree = "<group>";
+		};
 		8564B78522DDA6F9001DF514 /* UIApplication */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF8A22C073710077B664 /* TTUIKit.h */,
+				8521D33622E16C0700F635BF /* UIKeyboard */,
 				8564B78522DDA6F9001DF514 /* UIApplication */,
 				8589BE4222D5D0FC000BBE14 /* UIFont */,
 				85B80D1B22CE0A880072A1B1 /* UIStoryboard */,
@@ -382,6 +396,10 @@
 				DA45609F229C095100525AA3 /* UIView+SYJXibConfiguration.m */,
 				8521D32B22E14E1B00F635BF /* UIView+TTFrame.h */,
 				8521D32C22E14E1B00F635BF /* UIView+TTFrame.m */,
+				8521D33722E1706600F635BF /* UIView+TTKeyboard.h */,
+				8521D33822E1706600F635BF /* UIView+TTKeyboard.m */,
+				8521D33322E16AB700F635BF /* UIView+TTGesture.h */,
+				8521D33422E16AB700F635BF /* UIView+TTGesture.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -789,11 +807,13 @@
 				8586AFA522C07D0C0077B664 /* TTRequestManager.m in Sources */,
 				84670719210022AB00B7D288 /* UIImage+TTCode.m in Sources */,
 				8467071A210022AB00B7D288 /* UIViewController+TTAlert.m in Sources */,
+				8521D33522E16AB700F635BF /* UIView+TTGesture.m in Sources */,
 				8591877722C3099600E2DC9A /* TTAES128Encrypter.m in Sources */,
 				851CE16322E016DF008AD92F /* NSData+TTAES128.m in Sources */,
 				851CE16222E016DE008AD92F /* NSData+TTHexString.m in Sources */,
 				8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */,
 				846706A72100205E00B7D288 /* main.m in Sources */,
+				8521D33922E1706600F635BF /* UIView+TTKeyboard.m in Sources */,
 				8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */,
 				8582377622DECEA10029F54E /* TTToastTool.m in Sources */,
 				8591877D22C30E6C00E2DC9A /* NSFileManager+TTFile.m in Sources */,

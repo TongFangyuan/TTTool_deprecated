@@ -20,5 +20,7 @@
 #import "UIApplication+TTKeyWindow.h"
 #import "UIView+TTFrame.h"
 #import "UIViewController+TTView.h"
+#import "UIView+TTGesture.h"
+#import "UIView+TTKeyboard.h"
 
 #endif /* TTUIKit_h */
