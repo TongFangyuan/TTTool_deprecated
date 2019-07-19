@@ -18,5 +18,7 @@
 #import "UIViewController+TTNavBar.h"
 #import "UIFont+TTPingFang.h"
 #import "UIApplication+TTKeyWindow.h"
+#import "UIView+TTFrame.h"
+#import "UIViewController+TTView.h"
 
 #endif /* TTUIKit_h */
