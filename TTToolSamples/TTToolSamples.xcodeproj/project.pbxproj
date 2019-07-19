@@ -227,6 +227,7 @@
 		8467068B2100205D00B7D288 = {
 			isa = PBXGroup;
 			children = (
+				8586AFA622C0AA1F0077B664 /* Permission(权限申请) */,
 				8467070A210022AB00B7D288 /* TTTool */,
 				846706962100205D00B7D288 /* TTToolSamples */,
 				846706952100205D00B7D288 /* Products */,
@@ -669,7 +670,6 @@
 				8586AF9C22C07BC20077B664 /* TTHelper.h */,
 				8591877022C3099600E2DC9A /* Encryption */,
 				8586AFEC22C0CEAB0077B664 /* Cache */,
-				8586AFA622C0AA1F0077B664 /* Permission(权限申请) */,
 				8586AF9D22C07BCB0077B664 /* App */,
 			);
 			path = Helper;
