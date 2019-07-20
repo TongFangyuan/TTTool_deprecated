@@ -10,4 +10,10 @@
 
 @implementation UIView (TTGesture)
 
+- (void)tt_addTapGestureWithTarget:(id)target action:(SEL)action {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:tap];
+    self.userInteractionEnabled = YES;
+}
+
 @end
