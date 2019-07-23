@@ -19,9 +19,13 @@
                                    faild:(FaildBlock)faild
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    /// responseSerializer
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    manager.requestSerializer.timeoutInterval = 30;  // 超时时间设置为10s
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain",@"text/json", @"text/javascript",@"text/html",nil];
+    /// requestSerializer
+    manager.requestSerializer  = [AFJSONRequestSerializer serializer];
+    manager.requestSerializer.timeoutInterval = 30;
+    
     if (headerParameters != nil)
     {
         // 有自定义的请求头
@@ -98,7 +102,13 @@
 
 {
     AFHTTPSessionManager * manager = [[AFHTTPSessionManager alloc] init];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/xml",@"text/html", @"text/plain",@"application/x-www-form-urlencoded",@"multipart/form-data",nil];
+    /// responseSerializer
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/xml", @"text/plain",@"application/x-www-form-urlencoded",@"multipart/form-data",@"text/javascript",nil];
+    /// requestSerializer
+    manager.requestSerializer  = [AFJSONRequestSerializer serializer];
+    manager.requestSerializer.timeoutInterval = 30;
+    
     NSString *postURL = [NSString stringWithFormat:@"%@%@",REQUEST,code];
     NSURL *url = [NSURL URLWithString:filepath];
     NSData *audioData = [NSData dataWithContentsOfURL:url];
