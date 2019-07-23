@@ -1,6 +1,7 @@
-# 加密
+# TTHelper
 
-## AES加密
+## Encryption
+### AES加密
 `TTAES128Encrypter`类
 ```
 ---------参数---------
