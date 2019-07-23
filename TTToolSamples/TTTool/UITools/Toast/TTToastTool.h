@@ -55,7 +55,6 @@ typedef enum : NSUInteger {
 
 /**
  生成风格为TTToastStyleStyleDefault的对象
- 
  */
 + (instancetype)shareConfig;
 

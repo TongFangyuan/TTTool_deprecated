@@ -113,6 +113,7 @@
 		851DE0A022E6EE69001AFAA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		851DE0A322E6EE90001AFAA6 /* NetWork.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetWork.md; sourceTree = "<group>"; };
 		851DE0A522E6EF36001AFAA6 /* Categories.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Categories.md; sourceTree = "<group>"; };
+		851DE0A622E70449001AFAA6 /* UITools.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UITools.md; sourceTree = "<group>"; };
 		8521D32B22E14E1B00F635BF /* UIView+TTFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TTFrame.h"; sourceTree = "<group>"; };
 		8521D32C22E14E1B00F635BF /* UIView+TTFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTFrame.m"; sourceTree = "<group>"; };
 		8521D32E22E1524F00F635BF /* UIViewController+TTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTView.h"; sourceTree = "<group>"; };
@@ -365,6 +366,7 @@
 				851DE0A322E6EE90001AFAA6 /* NetWork.md */,
 				8591877922C309B100E2DC9A /* Helper.md */,
 				851DE0A522E6EF36001AFAA6 /* Categories.md */,
+				851DE0A622E70449001AFAA6 /* UITools.md */,
 			);
 			path = README;
 			sourceTree = "<group>";
