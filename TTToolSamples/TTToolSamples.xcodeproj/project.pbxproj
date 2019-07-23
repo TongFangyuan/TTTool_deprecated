@@ -34,7 +34,7 @@
 		851CE16222E016DE008AD92F /* NSData+TTHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CE15E22E016DE008AD92F /* NSData+TTHexString.m */; };
 		851CE16322E016DF008AD92F /* NSData+TTAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CE15F22E016DE008AD92F /* NSData+TTAES128.m */; };
 		851DE0A122E6EE69001AFAA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 851DE0A022E6EE69001AFAA6 /* README.md */; };
-		851DE0A422E6EE90001AFAA6 /* TTNetWork.md in Resources */ = {isa = PBXBuildFile; fileRef = 851DE0A322E6EE90001AFAA6 /* TTNetWork.md */; };
+		851DE0A422E6EE90001AFAA6 /* NetWork.md in Resources */ = {isa = PBXBuildFile; fileRef = 851DE0A322E6EE90001AFAA6 /* NetWork.md */; };
 		8521D32D22E14E1B00F635BF /* UIView+TTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D32C22E14E1B00F635BF /* UIView+TTFrame.m */; };
 		8521D33022E1524F00F635BF /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D32F22E1524F00F635BF /* UIViewController+TTView.m */; };
 		8521D33522E16AB700F635BF /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33422E16AB700F635BF /* UIView+TTGesture.m */; };
@@ -111,7 +111,7 @@
 		851CE16022E016DE008AD92F /* NSData+TTHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TTHexString.h"; sourceTree = "<group>"; };
 		851CE16122E016DE008AD92F /* NSData+TTAES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TTAES128.h"; sourceTree = "<group>"; };
 		851DE0A022E6EE69001AFAA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		851DE0A322E6EE90001AFAA6 /* TTNetWork.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TTNetWork.md; sourceTree = "<group>"; };
+		851DE0A322E6EE90001AFAA6 /* NetWork.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetWork.md; sourceTree = "<group>"; };
 		851DE0A522E6EF36001AFAA6 /* Categories.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Categories.md; sourceTree = "<group>"; };
 		8521D32B22E14E1B00F635BF /* UIView+TTFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TTFrame.h"; sourceTree = "<group>"; };
 		8521D32C22E14E1B00F635BF /* UIView+TTFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTFrame.m"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		8591877422C3099600E2DC9A /* NSData+AES128TL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128TL.h"; sourceTree = "<group>"; };
 		8591877522C3099600E2DC9A /* TTAES128Encrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAES128Encrypter.h; sourceTree = "<group>"; };
 		8591877622C3099600E2DC9A /* NSData+AES128TL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES128TL.m"; sourceTree = "<group>"; };
-		8591877922C309B100E2DC9A /* TTHelper.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TTHelper.md; sourceTree = "<group>"; };
+		8591877922C309B100E2DC9A /* Helper.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Helper.md; sourceTree = "<group>"; };
 		8591877B22C30E6C00E2DC9A /* NSFileManager+TTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TTFile.m"; sourceTree = "<group>"; };
 		8591877C22C30E6C00E2DC9A /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TTFile.h"; sourceTree = "<group>"; };
 		85A2D13C22D337BD00716159 /* UIViewController+TTNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavBar.h"; sourceTree = "<group>"; };
@@ -362,8 +362,8 @@
 			isa = PBXGroup;
 			children = (
 				85C0803B22B33C150023DE39 /* Marcro.md */,
-				851DE0A322E6EE90001AFAA6 /* TTNetWork.md */,
-				8591877922C309B100E2DC9A /* TTHelper.md */,
+				851DE0A322E6EE90001AFAA6 /* NetWork.md */,
+				8591877922C309B100E2DC9A /* Helper.md */,
 				851DE0A522E6EF36001AFAA6 /* Categories.md */,
 			);
 			path = README;
@@ -764,7 +764,7 @@
 				8521D39422E1B8FB00F635BF /* TTAlert.strings in Resources */,
 				845AAEF82105C628008DA154 /* ResizeTransformUIView.storyboard in Resources */,
 				8467071E210030D100B7D288 /* CoreImage.storyboard in Resources */,
-				851DE0A422E6EE90001AFAA6 /* TTNetWork.md in Resources */,
+				851DE0A422E6EE90001AFAA6 /* NetWork.md in Resources */,
 				845AAF022105CC3C008DA154 /* AttributedString.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
