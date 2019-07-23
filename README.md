@@ -48,4 +48,4 @@ FYTimeWatch
 
 iOS笔记
 ---
-- [iOS资料整理201808.md](https://github.com/TongFangyuan/WorkSummary/blob/master/iOS%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86%EF%BC%888%E6%9C%88%EF%BC%89.md)
+- [iOS资料整理201808.md](/iOS资料整理201808.md)
