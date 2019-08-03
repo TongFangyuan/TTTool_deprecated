@@ -20,6 +20,8 @@
 /// 取数据
 + (id)objectForKey:(NSString *)key;
 
+/// 获取格式化后的字符串 例如：v1.1.2(20)
++ (NSString *)getFormatterVersion;
 /// 获取App的版本号
 + (NSString *)appVersion;
 /// 获取App的build版本

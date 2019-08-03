@@ -27,6 +27,10 @@
     return [NSUserDefaults.standardUserDefaults objectForKey:key];
 }
 
++ (NSString *)getFormatterVersion {
+    return [NSString stringWithFormat:@"v%@(%@)",self.appVersion,self.appBuildVersion];
+}
+
 + (NSString *)appVersion
 {
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
