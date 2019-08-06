@@ -11,5 +11,6 @@
 
 #import "TTApp.h"
 #import "TTEncryptHeader.h"
+#import "TTViewSizeAdapter.h"
 
 #endif /* TTHelper_h */

@@ -40,6 +40,7 @@
 		8521D33522E16AB700F635BF /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33422E16AB700F635BF /* UIView+TTGesture.m */; };
 		8521D33922E1706600F635BF /* UIView+TTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8521D33822E1706600F635BF /* UIView+TTKeyboard.m */; };
 		8521D39422E1B8FB00F635BF /* TTAlert.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8521D39622E1B8FB00F635BF /* TTAlert.strings */; };
+		8522C36122F9783D00A759C8 /* TTViewSizeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8522C36022F9783D00A759C8 /* TTViewSizeAdapter.m */; };
 		8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */; };
 		8582377622DECEA10029F54E /* TTToastTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8582377522DECEA10029F54E /* TTToastTool.m */; };
 		8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AF9522C075890077B664 /* NSString+TTRegularExpression.m */; };
@@ -126,6 +127,8 @@
 		8521D39722E1B95600F635BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		8521D39822E1B95600F635BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8521D39922E1B95600F635BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TTAlert.strings"; sourceTree = "<group>"; };
+		8522C35F22F9783D00A759C8 /* TTViewSizeAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewSizeAdapter.h; sourceTree = "<group>"; };
+		8522C36022F9783D00A759C8 /* TTViewSizeAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewSizeAdapter.m; sourceTree = "<group>"; };
 		855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTToolSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8564B78622DDA71D001DF514 /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
 		8564B78722DDA71E001DF514 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
@@ -376,6 +379,15 @@
 			children = (
 			);
 			path = UIKeyboard;
+			sourceTree = "<group>";
+		};
+		8522C35E22F977EB00A759C8 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				8522C35F22F9783D00A759C8 /* TTViewSizeAdapter.h */,
+				8522C36022F9783D00A759C8 /* TTViewSizeAdapter.m */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 		8564B78522DDA6F9001DF514 /* UIApplication */ = {
@@ -690,6 +702,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF9C22C07BC20077B664 /* TTHelper.h */,
+				8522C35E22F977EB00A759C8 /* Adapter */,
 				8591877022C3099600E2DC9A /* Encryption */,
 				8586AFEC22C0CEAB0077B664 /* Cache */,
 				8586AF9D22C07BCB0077B664 /* App */,
@@ -838,6 +851,7 @@
 				851CE16322E016DF008AD92F /* NSData+TTAES128.m in Sources */,
 				851CE16222E016DE008AD92F /* NSData+TTHexString.m in Sources */,
 				8564B78822DDA71E001DF514 /* UIApplication+TTKeyWindow.m in Sources */,
+				8522C36122F9783D00A759C8 /* TTViewSizeAdapter.m in Sources */,
 				846706A72100205E00B7D288 /* main.m in Sources */,
 				8521D33922E1706600F635BF /* UIView+TTKeyboard.m in Sources */,
 				8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */,
