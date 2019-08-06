@@ -6,6 +6,11 @@
 //  Copyright © 2019 tongfy. All rights reserved.
 //
 
+#define TTIPhone678Size CGSizeMake(375.f, 667.f)
+#define TTIPhone678PlusSize CGSizeMake(414.f, 736.f)
+#define TTIPhoneXXSSize CGSizeMake(375.f, 812.f)
+#define TTIPhoneXRXSMAXSize CGSizeMake(414.f, 896.f)
+
 #import "TTViewSizeAdapter.h"
 
 @interface TTViewSizeAdapter ()
@@ -55,30 +60,31 @@
 }
 
 
-- (void)configAdapter {
-//    CGFloat statusBarHeight = [UIApplication.sharedApplication statusBarFrame].size.height;
-//    CGFloat navbarHeight = 44.f;
-//    CGFloat topHeight = navbarHeight + statusBarHeight;
-//    
-//    CGFloat tabbarHeight = 49.f;
-//    CGFloat bottomHeight =
 
+- (void)configAdapter {
+    //    CGFloat statusBarHeight = [UIApplication.sharedApplication statusBarFrame].size.height;
+    //    CGFloat navbarHeight = 44.f;
+    //    CGFloat topHeight = navbarHeight + statusBarHeight;
+    //
+    //    CGFloat tabbarHeight = 49.f;
+    //    CGFloat bottomHeight =
+    
     self.sizeMap = @{
-                     @(TTiPhone678):NSStringFromCGSize(CGSizeMake(375.f, 667.f)),
-                     @(TTiPhone678Plus):NSStringFromCGSize(CGSizeMake(414.f, 736.f)),
-                     @(TTiPhoneXXS):NSStringFromCGSize(CGSizeMake(375.f, 812.f)),
-                     @(TTiPhoneXRXSMAX):NSStringFromCGSize(CGSizeMake(414.f, 896.f))
+                     @(TTiPhone678):NSStringFromCGSize(TTIPhone678Size),
+                     @(TTiPhone678Plus):NSStringFromCGSize(TTIPhone678PlusSize),
+                     @(TTiPhoneXXS):NSStringFromCGSize(TTIPhoneXXSSize),
+                     @(TTiPhoneXRXSMAX):NSStringFromCGSize(TTIPhoneXRXSMAXSize)
                      };
     
     self.iPhoneMap = @{
-                       NSStringFromCGSize(CGSizeMake(375.f, 667.f)):@(TTiPhone678),
-                       NSStringFromCGSize(CGSizeMake(414.f, 736.f)):@(TTiPhone678Plus),
-                       NSStringFromCGSize(CGSizeMake(375.f, 812.f)):@(TTiPhoneXXS),
-                       NSStringFromCGSize(CGSizeMake(414.f, 896.f)):@(TTiPhoneXRXSMAX)
+                       NSStringFromCGSize(TTIPhone678Size):@(TTiPhone678),
+                       NSStringFromCGSize(TTIPhone678PlusSize):@(TTiPhone678Plus),
+                       NSStringFromCGSize(TTIPhoneXXSSize):@(TTiPhoneXXS),
+                       NSStringFromCGSize(TTIPhoneXRXSMAXSize):@(TTiPhoneXRXSMAX)
                        };
     
     /// 设置当前机型
-    CGSize size = [[UIScreen mainScreen] currentMode].size;
+    CGSize size = [[UIScreen mainScreen] bounds].size;
     self.currentIPhone = [self getIPhoneWithSize:size];
     
 }
@@ -97,13 +103,13 @@
 
 - (void)setMarkIPhone:(TTiPhone)markIPhone {
     _markIPhone = markIPhone;
-
+    
     /// 比例尺配置
     CGSize markSize = [self getSizeWithIPhone:markIPhone];
     CGSize targetSzie = [self getSizeWithIPhone:self.currentIPhone];
-    self.widthScale = markSize.width / targetSzie.width;
-    self.heightScale = markSize.height / targetSzie.height;
-
+    self.widthScale = targetSzie.width / markSize.width;
+    self.heightScale = targetSzie.height / markSize.height;
+    
 }
 
 @end
