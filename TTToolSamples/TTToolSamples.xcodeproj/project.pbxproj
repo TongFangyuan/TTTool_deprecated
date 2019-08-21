@@ -29,6 +29,7 @@
 		846707232100333D00B7D288 /* CoreImageStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 846707222100333D00B7D288 /* CoreImageStudyVC.m */; };
 		84888856211945DB00FBAC8F /* Code.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84888855211945DB00FBAC8F /* Code.storyboard */; };
 		848888592119466C00FBAC8F /* CodeGeneratViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848888582119466C00FBAC8F /* CodeGeneratViewController.m */; };
+		850C143C230CDE850017147D /* NSDate+TTInternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 850C143B230CDE850017147D /* NSDate+TTInternetDateTime.m */; };
 		851463D322C1ADD9005E0F0A /* UIAlertController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 851463D222C1ADD9005E0F0A /* UIAlertController+TTAlert.m */; };
 		8518F3AA22CEF5A200167A6F /* NSArray+TTPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 8518F3A922CEF5A200167A6F /* NSArray+TTPlist.m */; };
 		851CE16222E016DE008AD92F /* NSData+TTHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 851CE15E22E016DE008AD92F /* NSData+TTHexString.m */; };
@@ -103,6 +104,8 @@
 		84888855211945DB00FBAC8F /* Code.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Code.storyboard; sourceTree = "<group>"; };
 		848888572119466C00FBAC8F /* CodeGeneratViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGeneratViewController.h; sourceTree = "<group>"; };
 		848888582119466C00FBAC8F /* CodeGeneratViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeGeneratViewController.m; sourceTree = "<group>"; };
+		850C143A230CDE850017147D /* NSDate+TTInternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TTInternetDateTime.h"; sourceTree = "<group>"; };
+		850C143B230CDE850017147D /* NSDate+TTInternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TTInternetDateTime.m"; sourceTree = "<group>"; };
 		851463D122C1ADD9005E0F0A /* UIAlertController+TTAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+TTAlert.h"; sourceTree = "<group>"; };
 		851463D222C1ADD9005E0F0A /* UIAlertController+TTAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+TTAlert.m"; sourceTree = "<group>"; };
 		8518F3A822CEF5A200167A6F /* NSArray+TTPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TTPlist.h"; sourceTree = "<group>"; };
@@ -342,6 +345,15 @@
 			path = "条码生成";
 			sourceTree = "<group>";
 		};
+		850C1439230CDE850017147D /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				850C143A230CDE850017147D /* NSDate+TTInternetDateTime.h */,
+				850C143B230CDE850017147D /* NSDate+TTInternetDateTime.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		8518F3A722CEF5A200167A6F /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF9222C074020077B664 /* TTFoundation.h */,
+				850C1439230CDE850017147D /* NSDate */,
 				851CE15D22E016DE008AD92F /* NSData */,
 				8518F3A722CEF5A200167A6F /* NSArray */,
 				85B80D1322CDFC920072A1B1 /* NSBundle */,
@@ -857,6 +870,7 @@
 				8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */,
 				8582377622DECEA10029F54E /* TTToastTool.m in Sources */,
 				8591877D22C30E6C00E2DC9A /* NSFileManager+TTFile.m in Sources */,
+				850C143C230CDE850017147D /* NSDate+TTInternetDateTime.m in Sources */,
 				846707232100333D00B7D288 /* CoreImageStudyVC.m in Sources */,
 				84670718210022AB00B7D288 /* TTErrorView.m in Sources */,
 				846706E5210021B300B7D288 /* MainViewController.m in Sources */,

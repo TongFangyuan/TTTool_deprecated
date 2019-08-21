@@ -17,5 +17,6 @@
 #import "NSArray+TTPlist.h"
 #import "NSData+TTAES128.h"
 #import "NSData+TTHexString.h"
+#import "NSDate+TTInternetDateTime.h"
 
 #endif /* TTFoundation_h */
