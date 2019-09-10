@@ -88,12 +88,29 @@ static id _shareInstance;
 }
 
 static NSString *kUITableViewCellDeleteConfirmationView = @"UITableViewCellDeleteConfirmationView";
+static NSString *kUISwipeActionPullView = @"UISwipeActionPullView";
 
 - (void)tt_configEditStyle {
     NSDictionary *styleMap = [[TTTableViewCellEditStyleTool shareTool] configWithClass:[self class]];
     if (!styleMap) return;
     
+    /// ios 11以上是撇
+    if (@available(iOS 11.0, *)) {
+        for (UIView *view in self.superview.subviews) {
+            if ([view isKindOfClass:NSClassFromString(kUISwipeActionPullView)]) {
+                for (UIButton *btn in view.subviews) {
+//                    NSLog(@"%@",btn);
+                    if ([btn isKindOfClass:[UIButton class]]) {
+                        NSString *title = btn.titleLabel.text;
+                        UITableViewCellEditButtonStyle *style = styleMap[title];
+                        [self _configBtn:btn style:style];
+                    }
+                }
+            }
+        }
+    } else {
     for (UIView *view in self.subviews) {
+            //        NSLog(@"%@",view);
         if ([view isKindOfClass:NSClassFromString(kUITableViewCellDeleteConfirmationView)]) {
             for (UIButton *btn in view.subviews) {
                 if ([btn isKindOfClass:[UIButton class]]) {
@@ -104,12 +121,15 @@ static NSString *kUITableViewCellDeleteConfirmationView = @"UITableViewCellDelet
             }
         }
     }
+    }
+    
 }
 
 - (void)_configBtn:(UIButton *)btn style:(UITableViewCellEditButtonStyle *)style {
     style.backgroundColor ? btn.backgroundColor=style.backgroundColor : nil;
+    style.backgroundColor ? btn.superview.backgroundColor=style.backgroundColor : nil;
     style.font ? btn.titleLabel.font=style.font : nil;
-    style.textColor ? btn.titleLabel.textColor=style.textColor : nil;
+    style.textColor ? [btn setTitleColor:style.textColor forState:UIControlStateNormal] : nil;
 }
 
 @end

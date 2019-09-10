@@ -23,5 +23,6 @@
 #import "UIView+TTGesture.h"
 #import "UIView+TTKeyboard.h"
 #import "UITableViewCell+TTEditStyle.h"
+#import "UITableView+TTEditStyle.h"
 
 #endif /* TTUIKit_h */
