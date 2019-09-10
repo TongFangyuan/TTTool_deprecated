@@ -1,9 +1,9 @@
 //
 //  NSData+AES128TL.h
-//  HelloWord
+//  TTToolSamples
 //
-//  Created by admin on 2019/4/23.
-//  Copyright © 2019年 008. All rights reserved.
+//  Created by Tong on 2019/4/23.
+//  Copyright © 2019 tongfy. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

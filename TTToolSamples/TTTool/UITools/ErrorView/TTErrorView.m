@@ -2,7 +2,7 @@
 //  AuraErrorView.m
 //  iOS_Aura
 //
-//  Created by admin on 2018/6/5.
+//  Created by Tong on 2018/6/5.
 //  Copyright © 2018年 TTTool. All rights reserved.
 //
 

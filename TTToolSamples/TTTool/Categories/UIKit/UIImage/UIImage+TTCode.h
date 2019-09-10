@@ -1,9 +1,9 @@
 //
 //  UIImage+TTCode.h
-//  HelloWord
+//  TTToolSamples
 //
-//  Created by admin on 2018/7/18.
-//  Copyright © 2018年 008. All rights reserved.
+//  Created by Tong on 2018/7/18.
+//  Copyright © 2019 tongfy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

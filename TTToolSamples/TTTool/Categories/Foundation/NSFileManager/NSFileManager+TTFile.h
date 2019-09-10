@@ -1,6 +1,6 @@
 //
 //  NSFileManager+TTFile.h
-//  iBox
+//  TTToolSamples
 //
 //  Created by Tong on 2019/6/25.
 //  Copyright © 2019 Tongfy. All rights reserved.

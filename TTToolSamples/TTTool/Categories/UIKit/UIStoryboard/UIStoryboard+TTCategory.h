@@ -1,6 +1,6 @@
 //
 //  UIStoryboard+TTCategory.h
-//  iBox
+//  TTToolSamples
 //
 //  Created by Tong on 2019/7/4.
 //  Copyright © 2019 Tongfy. All rights reserved.
@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+/// 唯一标志符
+typedef NSString * UIStoryboardIdentifier;
 
 @interface UIStoryboard (TTCategory)
 

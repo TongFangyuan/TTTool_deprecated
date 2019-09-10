@@ -1,6 +1,6 @@
 //
 //  UIApplication+TTKeyWindow.h
-//  MobileAir
+//  TTToolSamples
 //
 //  Created by Tong on 2019/7/16.
 //  Copyright © 2019 tongfy. All rights reserved.

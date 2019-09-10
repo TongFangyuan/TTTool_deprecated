@@ -2,7 +2,7 @@
 //  CodeGeneratViewController.m
 //  TTToolSamples
 //
-//  Created by admin on 2018/8/7.
+//  Created by Tong on 2018/8/7.
 //  Copyright © 2018年 tongfy. All rights reserved.
 //
 

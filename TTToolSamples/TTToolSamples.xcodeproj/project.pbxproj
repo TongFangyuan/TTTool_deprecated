@@ -56,6 +56,7 @@
 		8591877822C3099600E2DC9A /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877622C3099600E2DC9A /* NSData+AES128TL.m */; };
 		8591877D22C30E6C00E2DC9A /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591877B22C30E6C00E2DC9A /* NSFileManager+TTFile.m */; };
 		85A2D13E22D337BD00716159 /* UIViewController+TTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A2D13D22D337BD00716159 /* UIViewController+TTNavBar.m */; };
+		85A6557723273C770056E1C2 /* UITableViewCell+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A6557623273C770056E1C2 /* UITableViewCell+TTEditStyle.m */; };
 		85B80D1622CDFCB80072A1B1 /* NSBundle+TTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B80D1522CDFCB80072A1B1 /* NSBundle+TTBundle.m */; };
 		85B80D1E22CE0A890072A1B1 /* UIStoryboard+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B80D1D22CE0A880072A1B1 /* UIStoryboard+TTCategory.m */; };
 		D919EC6A5C6EC2C46784AAC9 /* Pods_TTToolSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855484ECE8C6043F720CB62B /* Pods_TTToolSamples.framework */; };
@@ -170,6 +171,8 @@
 		8591877C22C30E6C00E2DC9A /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TTFile.h"; sourceTree = "<group>"; };
 		85A2D13C22D337BD00716159 /* UIViewController+TTNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavBar.h"; sourceTree = "<group>"; };
 		85A2D13D22D337BD00716159 /* UIViewController+TTNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTNavBar.m"; sourceTree = "<group>"; };
+		85A6557523273C770056E1C2 /* UITableViewCell+TTEditStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TTEditStyle.h"; sourceTree = "<group>"; };
+		85A6557623273C770056E1C2 /* UITableViewCell+TTEditStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TTEditStyle.m"; sourceTree = "<group>"; };
 		85B80D1422CDFCB80072A1B1 /* NSBundle+TTBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TTBundle.h"; sourceTree = "<group>"; };
 		85B80D1522CDFCB80072A1B1 /* NSBundle+TTBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TTBundle.m"; sourceTree = "<group>"; };
 		85B80D1C22CE0A880072A1B1 /* UIStoryboard+TTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+TTCategory.h"; sourceTree = "<group>"; };
@@ -424,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				8586AF8A22C073710077B664 /* TTUIKit.h */,
+				85A6557423273C770056E1C2 /* UITableViewCell */,
 				8521D33622E16C0700F635BF /* UIKeyboard */,
 				8564B78522DDA6F9001DF514 /* UIApplication */,
 				8589BE4222D5D0FC000BBE14 /* UIFont */,
@@ -658,6 +662,15 @@
 			path = NSFileManager;
 			sourceTree = "<group>";
 		};
+		85A6557423273C770056E1C2 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				85A6557523273C770056E1C2 /* UITableViewCell+TTEditStyle.h */,
+				85A6557623273C770056E1C2 /* UITableViewCell+TTEditStyle.m */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
 		85B80D1322CDFC920072A1B1 /* NSBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -878,6 +891,7 @@
 				84670717210022AB00B7D288 /* TTApp.m in Sources */,
 				85B80D1622CDFCB80072A1B1 /* NSBundle+TTBundle.m in Sources */,
 				8586AF9622C075890077B664 /* NSString+TTRegularExpression.m in Sources */,
+				85A6557723273C770056E1C2 /* UITableViewCell+TTEditStyle.m in Sources */,
 				846706992100205D00B7D288 /* AppDelegate.m in Sources */,
 				8521D33022E1524F00F635BF /* UIViewController+TTView.m in Sources */,
 				84670716210022AB00B7D288 /* NSObject+TTKVO.m in Sources */,

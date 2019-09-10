@@ -2,7 +2,7 @@
 //  TTErrorView.h
 //  iOS_Aura
 //
-//  Created by admin on 2018/6/5.
+//  Created by Tong on 2018/6/5.
 //  Copyright © 2018年 TTTool. All rights reserved.
 //  错误提示弹窗
 //  第三方依赖:  Masonry

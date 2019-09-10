@@ -1,6 +1,6 @@
 //
 //  UIView+SYJXibConfiguration.h
-//  MobileAir
+//  TTToolSamples
 //
 //  Created by 沈赟杰 on 2019/4/30.
 //  Copyright © 2019 tongfy. All rights reserved.

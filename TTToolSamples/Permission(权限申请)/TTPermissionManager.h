@@ -3,7 +3,7 @@
 //  VoiceCollection
 //
 //  Created by Tong on 2019/6/19.
-//  Copyright © 2019 ZhouJinhua. All rights reserved.
+//  Copyright © 2019 tongfy. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
